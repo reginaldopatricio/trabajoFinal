@@ -1,0 +1,224 @@
+/* ********* */
+/* @HMAIN */
+/* ********* */
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get($Colores, baseEcuatoguineano);
+    margin-top: map-get($medidasMain, padding-topMain);
+
+    .Main-texto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Main-linea {
+        height: map-get($medidasMain, heightLinea);
+        width: map-get($medidasMain, widthLinea);
+        background-color: map-get($Colores, LetraNegra);
+        border: none;
+    }
+
+    .Main-parrafo {
+        padding: map-get($medidasMain, paddingParafo);
+        font-size: map-get($medidasMain, letraParafo);
+        text-align: justify;
+    }
+
+    .Main-imagen {
+        background: url("../assets/img/smartphone/Cesar.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:  map-get($medidasMain, heightCesar);
+        width: map-get($medidasMain, widthImagen);
+    }
+
+    .acerca {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:  map-get($medidasMain, widthAcerca-de);
+        background-color: map-get($Colores, AcercaDe);
+    }
+
+    .acerca-de{
+        height: map-get($medidasMain, heightAcerca-de);
+    }
+
+    .acerca-linea {
+        height: map-get($medidasMain, heightAcercade-linea); 
+        width: map-get($medidasMain, widthAcercade-linea);
+        margin-bottom: map-get($medidasMain, paddingLinea);
+        background-color: map-get($Colores, LetraNegra);    
+        border: none;
+    }
+
+    .Main-superior {
+        height: map-get($medidasMain, height-superior);
+        width:  map-get($medidasMain, width-superior);
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    }
+
+    .Main-imagenblack {
+        background: url("../assets/img/smartphone/Black.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width:map-get($medidasMain, widthImagen);
+        height: map-get($medidasMain, heightBlack);
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+
+    }
+
+    .Main-inferior{
+        height: map-get($medidasMain, height-superior);
+        width:  map-get($medidasMain, width-superior);
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    }
+
+    .Main-boton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: map-get($medidasMain, border-Boton);
+        border-radius: map-get($medidasMain, borderRadius-boton);
+        width: map-get($medidasMain, with-Boton);
+        height: map-get($medidasMain, height-Boton);
+        font-size: map-get($medidasMain, letra-boton);
+        margin: map-get($medidasMain, margin-boton);
+        color: map-get($Colores, LetraLogFontIcono);
+        background-color: map-get($Colores, BannerFlojo);
+    }
+
+    .Eventos {
+        background-color: map-get($Colores, baseEcuatoguineano);
+        width:map-get($medidasMain, width-Eventos);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .Eventos-event{
+            height: map-get($medidasMain, heightAcerca-de)
+        }
+    
+        .Eventos-linea {
+            height: map-get($medidasMain, heightLinea);
+            width: map-get($medidasMain, widthLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-bottom: map-get($medidasMain, paddingLinea);
+            border: none;
+        }
+    
+        .Eventos-imagen1 {
+            background-image: url("../assets/img/smartphone/mindje.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthImagen);
+            height: map-get($medidasMain, heightImagen-Eventos);
+        }
+
+        .eventos{
+            margin: map-get($medidasMain, margin-eventos);
+        }
+    
+        .Eventos-imagen2 {
+            background-image: url("../assets/img/smartphone/Buika1.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthImagen);
+            height: map-get($medidasMain, heightImagen-Eventos);
+        }
+    
+    }
+
+    .OtrosEventos {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        .OtrosEventos-otros{
+            margin: map-get($medidasMain, margin-Otros-eventos);
+        }
+
+        .OtrosEventos-imagen1 {
+            background-image: url("../assets/img/smartphone/miss.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthImagen-Otros-eventos);
+            height: map-get($medidasMain, heightImagen-Otros-eventos);
+        }
+
+        .OtrosEventos-imagen2 {
+            background-image: url("../assets/img/smartphone/ALBA.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthImagen-Otros-eventos);
+            height: map-get($medidasMain, heightImagen-Otros-eventos);
+        }
+
+        .OtrosEventos-imagen3 {
+            background-image: url("../assets/img/smartphone/buika2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthImagen-Otros-eventos);
+            height: map-get($medidasMain, heightImagen-Otros-eventos);
+        }
+
+        .OtrosEventos-linea1{
+            height: map-get($medidasMain, heightLinea);
+            width: map-get($medidasMain, widthLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-bottom: map-get($medidasMain, paddingLinea);
+            border: none;
+        }
+
+        .OtrosEventos-linea {
+            width: map-get($medidasMain, widthLinea);
+            height: map-get($medidasMain, heightLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-top: map-get($medidasMain, paddingLinea);
+            border: none;
+        }
+
+        .OtrosEventos-texto{
+            width:  map-get($medidasMain, widthLetras-Otros-eventos);
+            font-size:  map-get($medidasMain, letra);
+            height: map-get($medidasMain, heightLetra-Otros-eventos);
+        
+        }
+
+        .OtrosEventos-boton {
+            width: map-get($medidasMain, widthBoton-Otros-eventos);
+            height: map-get($medidasMain, heightBoton-Otros-eventos);;
+            background-color:map-get($Colores, Boton);
+            border: none;
+            border-radius: map-get($medidasMain, borderRadius-boton);
+            color: map-get($Colores, LetraNegra);
+        }
+
+        a{
+            text-decoration: none;
+            color: map-get($Colores , LetraLogFontIcono );
+        }
+
+    }
+
+}

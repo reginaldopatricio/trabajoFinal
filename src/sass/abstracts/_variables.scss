@@ -9,7 +9,8 @@ $Colores: (
     letraLogo: #A83ADE,
     baseEcuatoguineano: #D9D9D9,
     AcercaDe: #868686,
-    Boton: #43045D
+    Boton: #43045D,
+    LetraNegra: black,
 );
 
 $medidasHeader: (
@@ -29,4 +30,45 @@ $medidasHeader: (
     GapLogos: 40px,
     Marginpictures: 80px,
 );
+
+$medidasMain:(
+    padding-topMain: 10px,
+    heightLinea: 3px,
+    widthLinea: 45px,
+    paddingParafo: 0 30px 0 30px,
+    letraParafo: 12px,
+    heightCesar: 327px,
+    widthImagen: 360px,
+    widthAcerca-de: 100%,
+    heightAcerca-de: 5px,
+    heightAcercade-linea: 3px,
+    widthAcercade-linea: 45px,
+    paddingLinea: 20px,
+    height-superior: 29px,
+    width-superior: 100%,
+
+    heightBlack: 237px,
+
+    borderRadius-boton: 10px,
+    with-Boton: 114px,
+    height-Boton: 44px,
+    letra-boton: 14px,
+    margin-boton: 0 30px 30px 0,
+    border-Boton: solid #23232B,
+
+    width-Eventos: 100%,
+    heightImagen-Eventos: 140px,
+    margin-eventos: 3px 0 3px 0,
+
+    widthImagen-Otros-eventos: 329px,
+    heightImagen-Otros-eventos: 182px,
+    widthBoton-Otros-eventos: 188px,
+    heightBoton-Otros-eventos: 48px,
+    borderRadius-Otros-eventos: 10px,
+    margin-Otros-eventos: 10px 0 0 0,
+    widthLetras-Otros-eventos: 328px,
+    letra: 12px,
+    heightLetra-Otros-eventos: 62px,
+
+)
 
