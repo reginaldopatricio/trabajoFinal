@@ -333,31 +333,95 @@ template {
 /* @BANNER */
 /* ********* */
 body {
+  background-color: #010536;
+}
+
+/* ********* */
+/* @BANNER */
+/* ********* */
+.Header-pictures {
+  margin-top: 80px;
+}
+
+/* ********* */
+/* @HEADER */
+/* ********* */
+/*index*/
+/*HEADER*/
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #010536;
+}
+
+.Header-Banner {
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.Header-Banner .Logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.Header-Banner .Logos .Header-Iconologin {
+  width: 30px;
+  height: 30px;
+}
+.Header-Banner .Logos .Header-despliega {
+  display: none;
+}
+.Header-Banner .Logos .Header-desplegable {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+}
+.Header-Banner .Logos input:checked ~ .Header-desplegable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+  padding: 30px 0 30px 0;
+  background-color: #D9D9D9;
+}
+.Header-Banner .Logos .Header-iconoHamburguesa {
+  width: 30px;
+  height: 30px;
+}
+.Header-Banner .Logos a {
+  text-decoration: none;
+  color: black;
 }
 
-/* ********* */
-/* @BANNER */
-/* ********* */
-/* ********* */
-/* @HEADER */
-/* ********* */
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */

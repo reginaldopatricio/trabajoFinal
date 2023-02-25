@@ -2,7 +2,31 @@
 /* @VARIABLES */
 /* ********* */
 
-$medidas:(
+$Colores: (
+    BannerDominante: #010536,
+    BannerFlojo: #A80499,
+    LetraLogFontIcono: #C5D3E3,
+    letraLogo: #A83ADE,
+    baseEcuatoguineano: #D9D9D9,
+    AcercaDe: #868686,
+    Boton: #43045D
+);
 
+$medidasHeader: (
+    widthgeneral: 100%,
+    widthIcono: 30px,
+    heightIcono: 30px,
+    GapBanners: 20px,
+    TopDesplegables: 60px,
+    widthDesplegables: 100vw,
+    heightDesplegables: 100vh,
+    paddingChecked: 30px 0 30px 0,
+    heightChecked: 400px,
+    widthHamburguesa: 30px,
+    heightHamburguesa: 30px,
+    widthpictures: 360px,
+    heightpictures: 553px,
+    GapLogos: 40px,
+    Marginpictures: 80px,
 );
 

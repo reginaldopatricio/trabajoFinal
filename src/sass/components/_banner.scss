@@ -1,3 +1,7 @@
 /* ********* */
 /* @BANNER */
 /* ********* */
+
+.Header-pictures{
+    margin-top: map-get($medidasHeader ,Marginpictures );
+}

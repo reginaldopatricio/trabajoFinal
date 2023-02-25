@@ -2,3 +2,73 @@
 /* @HEADER */
 /* ********* */
 
+
+/*index*/
+
+/*HEADER*/
+.Header {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($Colores, BannerDominante);
+}
+
+.Header-Banner{
+    background:#A80499;
+    background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    display: flex;
+    gap: map-get($medidasHeader ,GapBanners);
+    position: absolute;
+    width:  map-get($medidasHeader ,widthgeneral );
+    align-items: center;
+    justify-content: space-around;
+
+    .Logos {
+        display: flex;
+        gap: map-get($medidasHeader ,GapLogos );
+
+        .Header-Iconologin{
+            width: map-get($medidasHeader ,widthIcono );
+            height: map-get($medidasHeader ,heightIcono );
+        }
+    
+        .Header-despliega {
+            display: none;
+        }
+    
+        .Header-desplegable {
+            display: none;
+            position: absolute;
+            right: 0px;
+            top: 60px;
+            width: map-get($medidasHeader ,widthDesplegables );
+            height: map-get($medidasHeader ,heightDesplegables );
+            list-style: none;
+
+        }
+    
+        input:checked~.Header-desplegable {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            height: map-get($medidasHeader ,heightChecked );
+            padding: map-get($medidasHeader ,paddingChecked );
+            background-color: map-get($Colores ,baseEcuatoguineano );
+        }
+
+    
+        .Header-iconoHamburguesa {
+            width: map-get($medidasHeader ,widthHamburguesa);
+            height: map-get($medidasHeader ,heightHamburguesa);
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+
+
+
+}

@@ -3,20 +3,5 @@
 /* ********* */
 
 body{
-    background:#A80499;
-    background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    text-align: center;
-
-   // width: map-get($medidas, tamañowidth);
-}
-
-.icono{
-    margin: map-get($medidas, margenIcono);
-    width: map-get($medidas, tamañowidth);
-    height: map-get($medidas, alturaicono);
+    background-color: map-get($Colores, BannerDominante );
 }
