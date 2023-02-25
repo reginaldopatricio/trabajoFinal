@@ -358,8 +358,7 @@ body {
           flex-direction: column;
   background-color: #010536;
 }
-
-.Header-Banner {
+.Header .Header-Banner {
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
   display: -webkit-box;
@@ -374,20 +373,20 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.Header-Banner .Logos {
+.Header .Header-Banner .Logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-.Header-Banner .Logos .Header-Iconologin {
+.Header .Header-Banner .Logos .Header-Iconologin {
   width: 30px;
   height: 30px;
 }
-.Header-Banner .Logos .Header-despliega {
+.Header .Header-Banner .Logos .Header-despliega {
   display: none;
 }
-.Header-Banner .Logos .Header-desplegable {
+.Header .Header-Banner .Logos .Header-desplegable {
   display: none;
   position: absolute;
   right: 0px;
@@ -396,7 +395,7 @@ body {
   height: 100vh;
   list-style: none;
 }
-.Header-Banner .Logos input:checked ~ .Header-desplegable {
+.Header .Header-Banner .Logos input:checked ~ .Header-desplegable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,13 +412,47 @@ body {
   padding: 30px 0 30px 0;
   background-color: #D9D9D9;
 }
-.Header-Banner .Logos .Header-iconoHamburguesa {
+.Header .Header-Banner .Logos .Header-iconoHamburguesa {
   width: 30px;
   height: 30px;
 }
-.Header-Banner .Logos a {
+.Header .Header-Banner .Logos a {
   text-decoration: none;
   color: black;
+}
+
+/*HEADER2*/
+.Header2 {
+  background-color: #010536;
+}
+.Header2 .Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+  margin-bottom: 35px;
+}
+.Header2 .Navbar .Navbar-Logo {
+  padding-right: 70px;
+  font-size: 24px;
+}
+.Header2 .Fondo {
+  background-color: #A80499;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  color: #C5D3E3;
 }
 
 /* ********* */
@@ -581,6 +614,8 @@ body {
 }
 .Main .Eventos .eventos {
   margin: 3px 0 3px 0;
+  text-decoration: none;
+  color: black;
 }
 .Main .Eventos .Eventos-imagen2 {
   background-image: url("../assets/img/smartphone/Buika1.webp");
@@ -667,6 +702,93 @@ body {
 }
 .Main .OtrosEventos .OtrosEventos-event {
   margin-bottom: 0;
+}
+
+.Main2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.Main2 .Main2-titulo {
+  font-size: 20px;
+  color: #C5D3E3;
+}
+.Main2 .Main2-imagen1 {
+  background: url("../assets/img/smartphone/Vanilla.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 187px;
+  height: 145px;
+}
+.Main2 .Main2-texto {
+  width: 239px;
+  padding-bottom: 10px;
+  color: #C5D3E3;
+}
+.Main2 .Main2-imagen2 {
+  background-image: url("../assets/img/smartphone/Brandon.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 187px;
+  height: 145px;
+}
+.Main2 .Arquetipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #D9D9D9;
+  width: 100%;
+}
+.Main2 .Arquetipo .Arquetipo-imagen1 {
+  background-image: url("../assets/img/smartphone/de-fondo@3x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 188px;
+  height: 155px;
+}
+.Main2 .Arquetipo .Arquetipo-texto {
+  width: 239px;
+  padding-bottom: 10px;
+}
+.Main2 .Main2-imagen3 {
+  background-image: url("../assets/img/smartphone/mindje2@3x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 188px;
+  height: 183px;
+  margin-top: 30px;
+}
+.Main2 .texto {
+  width: 228px;
+  height: 41;
+  font-size: 12px;
+  color: #C5D3E3;
 }
 
 /* ********* */

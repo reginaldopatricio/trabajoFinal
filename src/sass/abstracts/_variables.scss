@@ -76,5 +76,34 @@ $medidasMain:(
 $medidasFooter:(
     widthComentario-footer: 360px,
     heightComentario-footer: 90px,
+);
+
+$medidasHeaderAcerca:(
+    marrginBottom: 35px,
+    padding-right-logo:70px,
+    font-size:24px,
+
+    heightFondo: 108px,
+    fons-size-fondo: 32px,
+);
+
+$medidasMainAcerca:(
+    fons-size-titulo: 20px,
+    widthImagen-acerca: 187px,
+    heightImagen-acerca:145px,
+    widthImagen3-acerca: 188px,
+    heightImagen3Arquetipo-acerca: 155px,
+    heightImagen3-acerca: 183px,
+    margin-top-imagen3: 30px,
+    widthletra-acerca: 239px,
+    heightletra-acerca: 179px,
+    margin-bottom-letra: 10px,
+    widthgeneral: 100%,
+    widthLetraMindje: 228px,
+    heightLetraMindje: 41,
+    fonz-size-mindje: 12px,
+    weightimagenMindje: 188px,
+    heightimagenaMindje: 183px,
+    margin-top-imagenMindje: 30px,
 )
 

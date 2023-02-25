@@ -10,65 +10,94 @@
     display: flex;
     flex-direction: column;
     background-color: map-get($Colores, BannerDominante);
+
+    .Header-Banner{
+        background:#A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+        display: flex;
+        gap: map-get($medidasHeader ,GapBanners);
+        position: absolute;
+        width:  map-get($medidasHeader ,widthgeneral );
+        align-items: center;
+        justify-content: space-around;
+    
+        .Logos {
+            display: flex;
+            gap: map-get($medidasHeader ,GapLogos );
+    
+            .Header-Iconologin{
+                width: map-get($medidasHeader ,widthIcono );
+                height: map-get($medidasHeader ,heightIcono );
+            }
+        
+            .Header-despliega {
+                display: none;
+            }
+        
+            .Header-desplegable {
+                display: none;
+                position: absolute;
+                right: 0px;
+                top: 60px;
+                width: map-get($medidasHeader ,widthDesplegables );
+                height: map-get($medidasHeader ,heightDesplegables );
+                list-style: none;
+    
+            }
+        
+            input:checked~.Header-desplegable {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+                height: map-get($medidasHeader ,heightChecked );
+                padding: map-get($medidasHeader ,paddingChecked );
+                background-color: map-get($Colores ,baseEcuatoguineano );
+            }
+    
+        
+            .Header-iconoHamburguesa {
+                width: map-get($medidasHeader ,widthHamburguesa);
+                height: map-get($medidasHeader ,heightHamburguesa);
+            }
+        
+            a{
+                text-decoration: none;
+                color: map-get($Colores, LetraNegra);
+            }
+            
+        }
+    
+    }
 }
 
-.Header-Banner{
-    background:#A80499;
-    background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-    display: flex;
-    gap: map-get($medidasHeader ,GapBanners);
-    position: absolute;
-    width:  map-get($medidasHeader ,widthgeneral );
-    align-items: center;
-    justify-content: space-around;
+/*HEADER2*/
 
-    .Logos {
+.Header2 {
+    background-color: #010536;
+
+    .Navbar {
         display: flex;
-        gap: map-get($medidasHeader ,GapLogos );
+        justify-content: space-around;
+        background:#A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+        margin-bottom: map-get($medidasHeaderAcerca, marrginBottom);
 
-        .Header-Iconologin{
-            width: map-get($medidasHeader ,widthIcono );
-            height: map-get($medidasHeader ,heightIcono );
+        .Navbar-Logo {
+            padding-right: map-get($medidasHeaderAcerca, padding-right-logo );
+            font-size: map-get($medidasHeaderAcerca, font-size );
         }
-    
-        .Header-despliega {
-            display: none;
-        }
-    
-        .Header-desplegable {
-            display: none;
-            position: absolute;
-            right: 0px;
-            top: 60px;
-            width: map-get($medidasHeader ,widthDesplegables );
-            height: map-get($medidasHeader ,heightDesplegables );
-            list-style: none;
-
-        }
-    
-        input:checked~.Header-desplegable {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-around;
-            height: map-get($medidasHeader ,heightChecked );
-            padding: map-get($medidasHeader ,paddingChecked );
-            background-color: map-get($Colores ,baseEcuatoguineano );
-        }
-
-    
-        .Header-iconoHamburguesa {
-            width: map-get($medidasHeader ,widthHamburguesa);
-            height: map-get($medidasHeader ,heightHamburguesa);
-        }
-    
-        a{
-            text-decoration: none;
-            color: map-get($Colores, LetraNegra);
-        }
-        
     }
 
-
-
+    .Fondo {
+        background-color: map-get($Colores, BannerFlojo);
+        height: map-get($medidasHeaderAcerca, heightFondo );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: map-get($medidasHeaderAcerca, fons-size-fondo );
+        color: map-get($Colores, LetraLogFontIcono);
+    }
 }
+
+

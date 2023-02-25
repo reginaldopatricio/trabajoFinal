@@ -118,6 +118,7 @@
             margin-bottom: map-get($medidasMain, paddingLinea);
             border: none;
         }
+        
     
         .Eventos-imagen1 {
             background-image: url("../assets/img/smartphone/mindje.webp");
@@ -130,6 +131,8 @@
 
         .eventos{
             margin: map-get($medidasMain, margin-eventos);
+            text-decoration: none;
+            color: map-get($Colores , LetraNegra );
         }
     
         .Eventos-imagen2 {
@@ -225,4 +228,84 @@
 
     }
 
+}
+
+.Main2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .Main2-titulo{
+        font-size: 20px;
+        color: map-get($Colores , LetraLogFontIcono );
+    }
+
+    .Main2-imagen1 {
+        background: url("../assets/img/smartphone/Vanilla.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, widthImagen-acerca );
+        height: map-get($medidasMainAcerca, heightImagen-acerca );
+    }
+
+    .Main2-texto{
+        width: map-get($medidasMainAcerca, widthletra-acerca );
+        font-size: map-get($medidasMainAcerca, letraParafo );
+        padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
+        color: map-get($Colores, LetraLogFontIcono );
+    }
+
+    .Main2-imagen2 {
+        background-image: url("../assets/img/smartphone/Brandon.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, widthImagen-acerca );
+        height: map-get($medidasMainAcerca, heightImagen-acerca );
+    }
+
+    .Arquetipo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: map-get($Colores, baseEcuatoguineano );
+        width: map-get($medidasMainAcerca, widthgeneral );
+
+        .Arquetipo-imagen1 {
+            background-image: url("../assets/img/smartphone/de-fondo@3x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMainAcerca, widthImagen3-acerca );
+            height: map-get($medidasMainAcerca, heightImagen3Arquetipo-acerca )
+        }
+
+        .Arquetipo-texto{
+            width: map-get($medidasMainAcerca, widthletra-acerca );
+            font-size: map-get($medidasMainAcerca, letraParafo );
+            padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
+        }
+    }
+
+    .Main2-imagen3 {
+        background-image: url("../assets/img/smartphone/mindje2@3x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, weightimagenMindje );
+        height: map-get($medidasMainAcerca,     heightimagenaMindje );
+        margin-top: map-get($medidasMainAcerca, margin-top-imagenMindje )
+    }
+
+    .texto{
+        width: map-get($medidasMainAcerca, widthLetraMindje);
+        height: map-get($medidasMainAcerca, heightLetraMindje );
+        font-size: map-get($medidasMainAcerca, fonz-size-mindje );
+        color: map-get($Colores, LetraLogFontIcono);
+    }
 }
