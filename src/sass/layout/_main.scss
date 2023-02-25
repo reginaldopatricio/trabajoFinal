@@ -222,7 +222,7 @@
             color: map-get($Colores , LetraLogFontIcono );
         }
 
-        .OtrosEventos-event{
+        .event{
             margin-bottom: 0;
         }
 
@@ -306,6 +306,11 @@
         width: map-get($medidasMainAcerca, widthLetraMindje);
         height: map-get($medidasMainAcerca, heightLetraMindje );
         font-size: map-get($medidasMainAcerca, fonz-size-mindje );
+        color: map-get($Colores, LetraLogFontIcono);
+    }
+
+    .eventTime{
+        margin-bottom: 0;
         color: map-get($Colores, LetraLogFontIcono);
     }
 }

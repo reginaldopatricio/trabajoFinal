@@ -2,10 +2,12 @@
 /* @FOOTER */
 /* ********* */
 
+
 .Footer-Comentario{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     text-align: center;
     margin-top: 0px;
     width: map-get($medidasFooter, widthComentario-footer );
