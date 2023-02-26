@@ -87,6 +87,11 @@
             padding-right: map-get($medidasHeaderAcerca, padding-right-logo );
             font-size: map-get($medidasHeaderAcerca, font-size );
         }
+
+        a{
+            display: flex;
+            align-items: center;
+        }
     }
 
     .Fondo {
@@ -105,6 +110,11 @@
         justify-content: space-around;
         background:#A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+
+        a{
+            display: flex;
+            align-items: center;
+        }
     }
 }
 

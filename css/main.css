@@ -440,6 +440,14 @@ body {
   padding-right: 70px;
   font-size: 24px;
 }
+.Header2 .Navbar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .Header2 .Fondo {
   background-color: #A80499;
   height: 108px;
@@ -463,6 +471,14 @@ body {
       justify-content: space-around;
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
+.Header2 .Navbar2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ********* */
