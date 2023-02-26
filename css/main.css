@@ -863,6 +863,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 0;
+  /*Edicion*/
 }
 .Main3 .Main3-texto {
   font-size: 14px;
@@ -905,6 +907,27 @@ body {
 }
 .Main3 .Main2-titulo {
   margin-bottom: 0;
+}
+.Main3 .lineaEdicion {
+  height: 3px;
+  width: 45px;
+  background-color: black;
+  margin-bottom: 20px;
+  border: none;
+}
+.Main3 .linea {
+  width: 290px;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 20px;
+  border: none;
+}
+.Main3 .texto {
+  text-align: justify;
+  width: 314px;
+}
+.Main3 .Caja {
+  text-align: justify;
 }
 
 /* ********* */

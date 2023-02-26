@@ -371,7 +371,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
+    margin-top: 0;
     .Main3-texto {
         font-size: map-get($medidasMain,  letras );
 
@@ -421,5 +421,29 @@
 
     .Main2-titulo{
         margin-bottom: 0;
+    }
+
+    /*Edicion*/
+    .lineaEdicion{
+        height: map-get($medidasMain, heightLinea);
+        width: map-get($medidasMain, widthLinea);
+        background-color: map-get($Colores, LetraNegra);
+        margin-bottom: map-get($medidasMain, paddingLinea);
+        border: none;
+    }
+    .linea{
+        width: map-get($medidasMain, widthlinealarga);
+        height: map-get($medidasMain, heightlinealarga);
+        background-color: map-get($Colores, LetraNegra);
+        margin-bottom: map-get($medidasMain, paddingLinea);
+        border: none;
+    }
+
+    .texto{
+        text-align: justify;
+        width: map-get($medidasMain, widthLetra);
+    }
+    .Caja{
+        text-align: justify;
     }
 }
