@@ -446,4 +446,13 @@
     .Caja{
         text-align: justify;
     }
+
+    .Main3-imagenRomy{
+        background: url("../assets/img/smartphone/romy_so_love3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+    }
 }

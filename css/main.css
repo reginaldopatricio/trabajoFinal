@@ -939,6 +939,14 @@ body {
 .Main3 .Caja {
   text-align: justify;
 }
+.Main3 .Main3-imagenRomy {
+  background: url("../assets/img/smartphone/romy_so_love3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 159px;
+}
 
 /* ********* */
 /* @NAVIGATOR */
