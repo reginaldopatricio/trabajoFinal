@@ -98,6 +98,14 @@
         font-size: map-get($medidasHeaderAcerca, fons-size-fondo );
         color: map-get($Colores, LetraLogFontIcono);
     }
+
+    /*Edicion*/
+    .Navbar2 {
+        display: flex;
+        justify-content: space-around;
+        background:#A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    }
 }
 
 

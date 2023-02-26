@@ -424,6 +424,7 @@ body {
 /*HEADER2*/
 .Header2 {
   background-color: #010536;
+  /*Edicion*/
 }
 .Header2 .Navbar {
   display: -webkit-box;
@@ -453,6 +454,15 @@ body {
           justify-content: center;
   font-size: 32px;
   color: #C5D3E3;
+}
+.Header2 .Navbar2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
 }
 
 /* ********* */
