@@ -313,4 +313,51 @@
         margin-bottom: 0;
         color: map-get($Colores, LetraLogFontIcono);
     }
+
+    /*OTROS EVENTOS*/
+    .Caja-otrosEventos{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: map-get($Colores, baseEcuatoguineano );
+        width: map-get($medidasMainAcerca, widthgeneral );
+
+    }
+    .Imagen-miss{
+        background: url("../assets/img/smartphone/miss2@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, weightimagenMindje);
+        height: map-get($medidasMainAcerca, heightImagen-otros);
+        margin-top:map-get($medidasMainAcerca, marginOtros-eventos );
+    }
+
+    .Imagen-ISABEL{
+        background: url("../assets/img/smartphone/ISABEL@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, weightimagenMindje);
+        height: map-get($medidasMainAcerca, heightImagen-otros);
+    }
+
+    .Imagen-Buika{
+        background: url("../assets/img/smartphone/Buika3@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMainAcerca, weightimagenMindje);
+        height: map-get($medidasMainAcerca, heightImagen-otros);
+    }
+
+    .texto-OtrosEventos{
+        color: map-get($Colores, LetraNegra);
+        width: map-get($medidasMainAcerca, widthletra-acerca );
+        font-size: map-get($medidasMainAcerca, letraParafo );
+        padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
+    }
 }
