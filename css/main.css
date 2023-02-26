@@ -874,6 +874,12 @@ body {
   color: #C5D3E3;
 }
 
+.eventTime {
+  margin-bottom: 0;
+  color: #C5D3E3;
+  text-align: center;
+}
+
 /* ********* */
 /* @FORMS */
 /* ********* */

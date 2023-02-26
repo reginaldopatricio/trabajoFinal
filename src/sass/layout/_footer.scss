@@ -19,3 +19,9 @@
 .Footer-texto{
     color: map-get($Colores, LetraLogFontIcono )
 }
+
+.eventTime{
+    margin-bottom: 0;
+    color: map-get($Colores, LetraLogFontIcono);
+    text-align: center;
+}
