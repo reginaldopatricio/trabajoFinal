@@ -903,6 +903,9 @@ body {
   text-decoration: none;
   color: #C5D3E3;
 }
+.Main3 .Main2-titulo {
+  margin-bottom: 0;
+}
 
 /* ********* */
 /* @NAVIGATOR */
