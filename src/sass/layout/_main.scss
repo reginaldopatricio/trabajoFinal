@@ -361,3 +361,61 @@
         padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
     }
 }
+
+ /*Eventos pasados*/
+.Main3 {
+    background-color: #D9D9D9;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .Main3-texto {
+        font-size: map-get($medidasMain,  letras );
+
+    }
+
+    .Boton {
+        padding-right: map-get($medidasMain,  paddng-boton );
+    }
+
+    .button {
+        width: map-get($medidasMain, widthBoton-Otros-eventos);
+        height: map-get($medidasMain, heightBoton-Otros-eventos);
+        background-color: #43045D;
+        border: none;
+        border-radius: map-get($medidasMain, borderRadius-boton);
+        color: #D9D9D9;
+    }
+
+    .Main3-imagen1 {
+        background: url("../assets/img/smartphone/Buika5.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+    }
+
+    .Main3-imagen2 {
+        background: url("../assets/img/smartphone/romy_so_love3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: map-get($medidasMainAcerca, margin-top-imagen3);
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+    }
+
+    .Main3-texto2{
+        font-size: map-get($medidasMain,  letras );
+        width: map-get($medidasMainAcerca, widthtexto);
+    }
+
+    a{
+        text-decoration: none;
+        color: map-get($Colores , LetraLogFontIcono );
+    }
+}
