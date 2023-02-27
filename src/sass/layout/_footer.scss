@@ -1,7 +1,66 @@
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: map-get($Colores, baseEcuatoguineano);
+    font-size: 12px;
+    align-items: center;
 
+    .list1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .list7{
+        grid-column: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        grid-row: 1 / span 3;
+        
+    }
+
+    .list3{
+        grid-column: 3/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+    }
+
+    .list5{
+        grid-column: 2/4;
+        display: flex;
+        align-items: center;
+        padding-left: 23px;
+        
+    }
+
+    .list6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1 / span 3;
+        grid-row: 4;
+        
+    }
+
+}
 
 .Footer-Comentario{
     display: flex;
