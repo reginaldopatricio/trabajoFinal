@@ -759,14 +759,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.Main .formulario2 .correo, .Main .formulario2 .contraseña {
+.Main .formulario2 .correo, .Main .formulario2 .contraseña, .Main .formulario2 .nombre, .Main .formulario2 .apellidos, .Main .formulario2 .confirmar-contraseña {
   width: 262px;
   height: 40px;
   border: solid gray;
   border-radius: 10px;
-}
-.Main .formulario2 .correo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .Main .formulario2 .text {
   font-size: 10px;

@@ -249,15 +249,12 @@
         align-items: center;
         flex-direction: column;
 
-        .correo, .contraseña{
+        .correo, .contraseña, .nombre, .apellidos, .confirmar-contraseña{
             width: map-get($medidasMain,widthinput);
             height: map-get($medidasMain, heightinput);
             border: solid gray;
             border-radius: map-get($medidasMain, borderRadius-boton);
-        }
-
-        .correo{
-            margin-bottom: map-get($medidasMain, margin-bottom-correo);
+            margin-bottom: map-get($medidasMain, margin-bottom-registro);
         }
 
         .text{
