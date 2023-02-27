@@ -744,6 +744,9 @@ body {
   height: 150px;
   margin-top: 20px;
 }
+.Main .Iniciar-Sesion {
+  margin-bottom: 30px;
+}
 .Main .formulario2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,12 +766,13 @@ body {
   border-radius: 10px;
 }
 .Main .formulario2 .correo {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .Main .formulario2 .text {
   font-size: 10px;
   padding-left: 130px;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 .Main .formulario2 .boton {
   width: 149px;
@@ -781,6 +785,9 @@ body {
 }
 .Main .formulario2 a {
   text-decoration: none;
+}
+.Main .formulario2 .registro {
+  margin-bottom: 42px;
 }
 
 .Main2 {

@@ -240,6 +240,10 @@
         
     }
 
+    .Iniciar-Sesion{
+        margin-bottom: map-get($medidasMain, margin-bottom-correo);
+    }
+
     .formulario2{
         display: flex;
         align-items: center;
@@ -260,6 +264,7 @@
            font-size: map-get($medidasMain, fonz);
            padding-left: map-get($medidasMain, padding-left);
            margin-top: 0;
+           margin-bottom: map-get($medidasMain, margin-bottom-correo);
         }
 
         .boton{
@@ -274,6 +279,10 @@
 
         a{
             text-decoration: none;
+        }
+
+        .registro{
+            margin-bottom: map-get($medidasMain, margin-bottom-crear);
         }
     }
 
