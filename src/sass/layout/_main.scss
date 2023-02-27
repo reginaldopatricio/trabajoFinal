@@ -228,6 +228,55 @@
 
     }
 
+    /*Login*/
+    .icono{
+        background: url("../assets/img/smartphone/icono-perfil@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthLogin);
+        height: map-get($medidasMain, heightLogin);
+        margin-top: 20px;
+        
+    }
+
+    .formulario2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .correo, .contraseña{
+            width: map-get($medidasMain,widthinput);
+            height: map-get($medidasMain, heightinput);
+            border: solid gray;
+            border-radius: map-get($medidasMain, borderRadius-boton);
+        }
+
+        .correo{
+            margin-bottom: map-get($medidasMain, margin-bottom-correo);
+        }
+
+        .text{
+           font-size: map-get($medidasMain, fonz);
+           padding-left: map-get($medidasMain, padding-left);
+           margin-top: 0;
+        }
+
+        .boton{
+            width: map-get($medidasMain, widthenviar);
+            height: map-get($medidasMain,heightinput);
+            margin-top: map-get($medidasMain, gapinput);
+            background-color:map-get($Colores, Boton);
+            border-radius: map-get($medidasMain, borderRadius-boton);
+            color: map-get($Colores, LetraLogFontIcono);
+            margin-bottom: map-get($medidasMain, margin-bottom-boton);
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
 }
 
 .Main2{
@@ -405,9 +454,10 @@
             margin-top: map-get($medidasMain, gapinput);
             background-color:map-get($Colores, Boton);
             border-radius: map-get($medidasMain, borderRadius-boton);
-            color: map-get($Colores, LetraLogFontIcono);;
+            color: map-get($Colores, LetraLogFontIcono);
         }
     }
+
 }
 
 /*Eventos pasados*/
@@ -504,5 +554,6 @@
         width: map-get($medidasMain, widthEventos-pasados);
         height: map-get($medidasMain, heightEventos-pasados);
     }
+
 
 }

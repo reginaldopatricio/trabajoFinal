@@ -5,3 +5,7 @@
 body{
     background-color: map-get($Colores, BannerDominante );
 }
+
+.contenedor{
+    background-color: map-get($Colores, blanco);
+}
