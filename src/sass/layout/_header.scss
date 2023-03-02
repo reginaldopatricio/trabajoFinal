@@ -20,6 +20,7 @@
         width:  map-get($medidasHeader ,widthgeneral );
         align-items: center;
         justify-content: space-around;
+        position: fixed;
     
         .Logos {
             display: flex;
@@ -75,14 +76,14 @@
 
 .Header2 {
     background-color: #010536;
-
     .Navbar {
         display: flex;
         justify-content: space-around;
         background:#A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
         margin-bottom: map-get($medidasHeaderAcerca, marrginBottom);
-
+        // position: fixed;
+        // width: 100%;
         .Navbar-Logo {
             padding-right: map-get($medidasHeaderAcerca, padding-right-logo );
             font-size: map-get($medidasHeaderAcerca, font-size );
