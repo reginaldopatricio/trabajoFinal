@@ -8,6 +8,7 @@
     align-items: center;
     margin-top: map-get($medidasMain, padding-topMain);
     background-color: map-get($Colores, blanco);
+    font-family: 'alexandria';
     .Main-texto {
         display: flex;
         align-items: center;
@@ -292,6 +293,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-family: 'alexandria';
 
     .Main2-titulo{
         font-size: 20px;

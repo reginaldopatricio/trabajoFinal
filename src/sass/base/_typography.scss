@@ -1,3 +1,17 @@
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+
+@font-face {
+    font-family: 'America';
+    src: url('/assets/font/AmericanGothic.woff2') format('woff2'),
+         url('/assets/font/AmericanGothic.woff') format('woff'),
+         url('assets/font/AmericanGothic.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: 'alexandria';
+    src: url('/assets/font/Alexandria-Regular.woff2') format('woff2'),
+         url('/assets/font/Alexandria-Regular.woff') format('woff'),
+         url('assets/font/Alexandria-Regular.ttf')  format('truetype');
+  }

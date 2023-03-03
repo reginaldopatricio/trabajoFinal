@@ -10,7 +10,10 @@
     display: flex;
     flex-direction: column;
     background-color: map-get($Colores, BannerDominante);
-
+    font-family: 'America';
+    .Header-Logo{
+        color: map-get($Colores, letraLogo);
+    }
     .Header-Banner{
         background:#A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
