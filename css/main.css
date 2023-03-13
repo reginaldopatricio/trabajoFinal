@@ -372,10 +372,13 @@ body {
   background-color: #010536;
   font-family: "America";
 }
-.Header .Header-Logo {
+
+.Header-Logo {
   color: #A83ADE;
+  padding-right: 100px;
 }
-.Header .Header-Banner {
+
+.Header-Navbar {
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
   display: -webkit-box;
@@ -391,112 +394,114 @@ body {
       justify-content: space-around;
   position: fixed;
 }
-.Header .Header-Banner .Logos {
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.Header-Navbar .Logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-.Header .Header-Banner .Logos .Header-Iconologin {
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .logos img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .login::after {
+    content: "INICIAR SESION";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .login-registro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    padding-left: 170px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.Header-Navbar .registro {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .registro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border: solid black;
+    width: 100px;
+    height: 30px;
+  }
+}
+.Header-Navbar .Header-Iconologin {
   width: 30px;
   height: 30px;
 }
-.Header .Header-Banner .Logos .Header-despliega {
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-Iconologin {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-desplegable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 210px;
+    gap: 40px;
+    list-style: none;
+  }
+}
+.Header-Navbar .Header-despliega {
   display: none;
 }
-.Header .Header-Banner .Logos .Header-desplegable {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 60px;
-  width: 100vw;
-  height: 100vh;
-  list-style: none;
-}
-.Header .Header-Banner .Logos input:checked ~ .Header-desplegable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 495px;
-  padding: 30px 0 30px 0;
-  background-color: #D9D9D9;
-}
-.Header .Header-Banner .Logos .Header-iconoHamburguesa {
-  width: 30px;
-  height: 30px;
-}
-.Header .Header-Banner .Logos a {
-  text-decoration: none;
-  color: black;
-}
-
-/*HEADER2*/
-.Header2 {
-  background-color: #010536;
-  /*Edicion*/
-}
-.Header2 .Navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #A80499;
-  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-  margin-bottom: 35px;
-}
-.Header2 .Navbar .Navbar-Logo {
-  padding-right: 70px;
-  font-size: 24px;
-}
-.Header2 .Navbar a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.Header2 .Fondo {
-  background-color: #A80499;
-  height: 108px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 32px;
-  color: #C5D3E3;
-}
-.Header2 .Navbar2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #A80499;
-  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-}
-.Header2 .Navbar2 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-iconoHamburguesa {
+    display: none;
+  }
 }
 
 /* ********* */
@@ -514,9 +519,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  background-color: #FFFFFF;
+  background-color: #010536;
   font-family: "alexandria";
   /*Login*/
+}
+.Main .Main-fondo {
+  margin-top: 0;
+  padding-top: 60px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 1366px) {
+  .Main .Main-fondo .imagen-de-fondo {
+    width: 50vw;
+  }
 }
 .Main .Main-texto {
   display: -webkit-box;
@@ -687,6 +702,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 .Main .OtrosEventos .OtrosEventos-otros {
   margin: 10px 0 0 0;

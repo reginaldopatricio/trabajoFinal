@@ -7,8 +7,20 @@
     flex-direction: column;
     align-items: center;
     margin-top: map-get($medidasMain, padding-topMain);
-    background-color: map-get($Colores, blanco);
+    background-color: map-get($Colores, BannerDominante);
     font-family: 'alexandria';
+    .Main-fondo{
+        margin-top: 0;
+        padding-top: map-get($medidasMain, padding-fondo);;
+        margin-bottom: map-get($medidasMain, margin-bottom-fondo);
+
+        @media only screen and (min-width:1366px){
+           .imagen-de-fondo{
+                width: 50vw;
+                
+           }
+        }
+    }
     .Main-texto {
         display: flex;
         align-items: center;
@@ -154,6 +166,7 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        width: 100%;
 
         .OtrosEventos-otros{
             margin: map-get($medidasMain, margin-Otros-eventos);

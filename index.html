@@ -10,12 +10,15 @@
 <body>
     <!--HEADER-->
     <header class="Header">
-        <section class="Header-Banner">
+        <section class="Header-Navbar">
             <!--Logo-->
             <h1 class="Header-Logo">EVENTTIME</h1>
             <section class="Logos">
                 <!--Icono-login-->
-                <a href="login.html"><img class="Header-Iconologin" src="./assets/img/svg/Registro.svg"></img></a>  
+                <section class="login-registro">
+                    <a href="registro.html" class="registro">Registro</a>
+                    <a class="login" href="login.html"><img class="Header-Iconologin" src="./assets/img/svg/Registro.svg"></img></a>
+                </section>
                 <!--Icono-despliegue-->
                 <input class="Header-despliega" type="checkbox" id="Header-boton">
                 <label for="Header-boton">
@@ -32,19 +35,27 @@
                 </ul>
             </section>
         </section>
-        <!--Imagen de fondo-->
-        <section class="Header-pictures">
-            <picture>
-                <source srcset="
-                            assets/img/smartphone/Banner-fondo.webp 1x,
-                            assets/img/smartphone/Banner-fondo@2x.webp 2x
-                            assets/img/smartphone/Banner-fondo@3x.webp 3x">
-                <img class="imagen-de-fondo" src="" alt="1ª paractica">
-            </picture>
-        </section>
     </header>
     <!--Main-->
     <main class="Main">
+        <!--Imagen de fondo-->
+        <section class="Main-fondo">
+            <picture>
+                <source srcset="
+                            assets/img/smartphone/Banner-fondo.webp 1x,
+                            assets/img/smartphone/Banner-fondo@2x.webp 2x,
+                            assets/img/smartphone/Banner-fondo@3x.webp 3x
+                            "media="(min-width:310px) and (orientation:portrait)">
+
+                            <source srcset="
+                            assets/img/desktop/banner-fondo.webp 1x,
+                            assets/img/desktop/banner-fondo@2x.webp 2x
+                            "
+                            media="(min-width:1000px)">
+                <img class="imagen-de-fondo
+                " src="" alt="1ª paractica">
+            </picture>
+        </section>
         <section class="Main-texto">
             <h4 class="Main-talento">TALENTO ECUATOGUINEANO</h4>
             <hr class="Main-linea">
