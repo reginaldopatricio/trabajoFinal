@@ -410,13 +410,31 @@ Main {
                 color: map-get($Colores, LetraLogFontIcono);
 
                 @media only screen and (min-width:1200px) {
-                    width: 90%;
+                    width: 1141px;
+                    height: 218px;
+                    margin-top: 70px;
                 }
+    }
+
+    .Archivo{
+        @media only screen and (min-width:1200px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 60px;
+            padding-top: 30px;
+
+            
+        }
+        
     }
 
     .Main2-titulo{
         font-size: 20px;
         color: map-get($Colores , LetraLogFontIcono );
+
+        @media only screen and (min-width:1200px){
+            padding-top: 20px;
+        }
     }
 
     .Main2-imagen1 {
@@ -426,6 +444,16 @@ Main {
         background-position: center;
         width: map-get($medidasMainAcerca, widthImagen-acerca );
         height: map-get($medidasMainAcerca, heightImagen-acerca );
+        
+        @media only screen and (min-width:1200px) {
+            background: url("../assets/img/desktop/Vanilla@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 539px;
+            height: 462px;
+            order: 2;
+        }
     }
 
     .Main2-texto{
@@ -433,6 +461,13 @@ Main {
         font-size: map-get($medidasMainAcerca, letraParafo );
         padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
         color: map-get($Colores, LetraLogFontIcono );
+        @media only screen and (min-width:1200px){
+            width: 391px;
+            font-size: 20px;
+            display: flex;
+            padding-left: 70px;
+            padding-top: 60px;
+        }
     }
 
     .Main2-imagen2 {
@@ -442,6 +477,16 @@ Main {
         background-position: center;
         width: map-get($medidasMainAcerca, widthImagen-acerca );
         height: map-get($medidasMainAcerca, heightImagen-acerca );
+
+        @media only screen and (min-width:1200px) {
+            background: url("../assets/img/desktop/Brandon@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 539px;
+            height: 462px;
+            margin-bottom: 100px;
+        }
     }
 
     .Arquetipo {
@@ -452,19 +497,102 @@ Main {
         background-color: map-get($Colores, baseEcuatoguineano );
         width: map-get($medidasMainAcerca, widthgeneral );
 
+        .Arquetipo-titulo{
+            @media only screen and (min-width:1200px){
+                margin-bottom: 0;
+            }
+        }
+        .linea{
+            width: map-get($medidas, widthLinea);
+            height: map-get($medidas, heightLinea);
+            background-color: map-get($Colores, LetraNegra);
+            border: none;
+            margin-bottom: 30px;
+        }
+
+        .cuadro{
+            @media only screen and (min-width:1200px){
+                display: flex;
+                gap: 250px;
+                margin-bottom: 50px;
+
+            }
+        }
         .Arquetipo-imagen1 {
             background-image: url("../assets/img/smartphone/de-fondo@3x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             width: map-get($medidasMainAcerca, widthImagen3-acerca );
-            height: map-get($medidasMainAcerca, heightImagen3Arquetipo-acerca )
+            height: map-get($medidasMainAcerca, heightImagen3Arquetipo-acerca );
+
+            @media only screen and (min-width:1200px){
+                background-image: url("../assets/img/desktop/banner-fondo@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 550px;
+                height: 512px;
+            }
         }
 
         .Arquetipo-texto{
             width: map-get($medidasMainAcerca, widthletra-acerca );
             font-size: map-get($medidasMainAcerca, letraParafo );
             padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
+
+            @media only screen and (min-width:1200px){
+                font-size: 20px;
+                width: 330px;
+            }
+        }
+
+        .lineasTexto{
+            @media only screen and (min-width:1200px){
+                
+            }
+        }
+
+        .linea1, .linea2, .linea3{
+            display: none;
+            @media only screen and (min-width:1200px){
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .linea1{
+            @media only screen and (min-width:1200px){
+                width: 351px;
+                height: map-get($medidas, heightLinea);
+                background-color: map-get($Colores, LetraNegra);
+                border: none;
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+            
+        }
+
+        .linea2{
+            @media only screen and (min-width:1200px){
+                width: 311px;
+                height: map-get($medidas, heightLinea);
+                background-color: map-get($Colores, LetraNegra);
+                border: none;
+                margin-bottom: 30px;
+            }
+            
+        }
+
+        .linea3{
+            @media only screen and (min-width:1200px){
+                width: 211px;
+                height: map-get($medidas, heightLinea);
+                background-color: map-get($Colores, LetraNegra);
+                border: none;
+                margin-bottom: 30px;
+            }
+            
         }
     }
 
@@ -475,7 +603,16 @@ Main {
         background-position: center;
         width: map-get($medidasMainAcerca, weightimagenMindje );
         height: map-get($medidasMainAcerca,     heightimagenaMindje );
-        margin-top: map-get($medidasMainAcerca, margin-top-imagenMindje )
+        margin-top: map-get($medidasMainAcerca, margin-top-imagenMindje );
+
+        @media only screen and (min-width:1200px){
+            background-image: url("../assets/img/desktop/mindjeDesk@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 472px;
+            height: 483px;
+        }
     }
 
     .texto{
@@ -483,6 +620,10 @@ Main {
         height: map-get($medidasMainAcerca, heightLetraMindje );
         font-size: map-get($medidasMainAcerca, fonz-size-mindje );
         color: map-get($Colores, LetraLogFontIcono);
+        @media only screen and (min-width:1200px){
+            width: 692px;
+            font-size: 16px;
+        }
     }
 
     .eventTime{
