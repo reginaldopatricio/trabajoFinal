@@ -148,7 +148,6 @@ Header {
         width: map-get($medidas , widthgeneral);
         align-items: center;
         justify-content: space-around;
-
         //DESKTOP
         @media only screen and (min-width:1200px) {
             display: flex;
@@ -270,7 +269,14 @@ Header {
     .liks{
         color: map-get($Colores , LetraNegra);
     }
+
+    .inicio{
+        @media only screen and (min-width:1200px) {
+            display: none;
+        }
+    }
 }
+
 
 // /*HEADER2*/
 

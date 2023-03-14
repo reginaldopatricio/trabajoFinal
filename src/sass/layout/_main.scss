@@ -398,6 +398,22 @@ Main {
     text-align: center;
     font-family: 'alexandria';
 
+    .Fondo {
+                background-color: map-get($Colores, BannerFlojo);
+                height: map-get($medidasHeaderAcerca, heightFondo );
+                width: 100%;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: map-get($medidasHeaderAcerca, fons-size-fondo );
+                color: map-get($Colores, LetraLogFontIcono);
+
+                @media only screen and (min-width:1200px) {
+                    width: 90%;
+                }
+    }
+
     .Main2-titulo{
         font-size: 20px;
         color: map-get($Colores , LetraLogFontIcono );
