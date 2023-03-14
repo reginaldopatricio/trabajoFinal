@@ -144,7 +144,49 @@ $medidasMainAcerca:(
     marginOtros-eventos: 27px,
 
     widthtexto: 295px,
-)
+);
+
+//medidas originales
+$medidas:(
+    HeaderGap: 30px,
+    widthgeneral: 100%,
+    widthIcono: 30px,
+    heightIcono: 30px,
+    widthDesplegables: 100vw,
+    heightDesplegables: 100vh,
+    heightChecked: 495px,
+    paddingChecked: 30px 0px 30px 0,
+    logo-margin-left: 20px,
+    movil-Top: 60px,
+    desktop-Top:15px,
+    desktop-rigth: 30px,
+    registro-width: 100px,
+    registro-height:30px,
+
+    //MAIN
+    heightLinea: 3px,
+    widthLinea: 45px,
+    letraParafo: 12px,
+    paddingParafo: 0 30px 20px 30px,
+    margin-Main: 13px,
+    padding-top: 10px,
+    height-foto: 327px,
+    width-foto: 360px,
+    height-black: 237px,
+    height-superior: 25px,
+    width-superior: 100%,
+    margin-boton: 0 30px 30px 0,
+    letra-boton: 14px,
+    marginLados: 20px 0 20px,
+    height-imagen: 149px,
+    paddingLinea: 30px,
+    width-images:329px,
+    height-images:182px,
+    width-boton:188px,
+    height-boton: 48px,
+    border-radius: 10px,
+
+);
 
 
 

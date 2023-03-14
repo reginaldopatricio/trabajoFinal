@@ -1,164 +1,253 @@
 /* ********* */
 /* @HMAIN */
 /* ********* */
-
-.Main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: map-get($medidasMain, padding-topMain);
-    background-color: map-get($Colores, BannerDominante);
-    font-family: 'alexandria';
-    .Main-fondo{
-        margin-top: 0;
-        padding-top: map-get($medidasMain, padding-fondo);;
-        margin-bottom: map-get($medidasMain, margin-bottom-fondo);
-
-        @media only screen and (min-width:1366px){
-           .imagen-de-fondo{
-                width: 50vw;
-                
-           }
+Main {
+    
+    .DosCuadros {
+        @media only screen and (min-width:1200px) {
+            display: flex;
+            // width: map-get($medidas , widthgeneral);
         }
     }
+
+    .imagen-de-fondo {
+        width: 100%;
+    }
+
     .Main-texto {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
         background-color: map-get($Colores, baseEcuatoguineano);
+        margin-top: map-get($medidas, margin-Main);
+        padding-top: map-get($medidas, padding-top);
+
+        @media only screen and (min-width:1200px) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .Main-talento {
+        text-align: center;
+        @media only screen and (min-width:1200px){
+            font-size: 24px;
+        }
+        
+        
+
     }
 
     .Main-linea {
-        height: map-get($medidasMain, heightLinea);
-        width: map-get($medidasMain, widthLinea);
+        height: map-get($medidas, heightLinea);
+        width: map-get($medidas, widthLinea);
         background-color: map-get($Colores, LetraNegra);
         border: none;
     }
 
     .Main-parrafo {
-        padding: map-get($medidasMain, paddingParafo);
-        font-size: map-get($medidasMain, letraParafo);
         text-align: justify;
+        padding: map-get($medidas, paddingParafo);
+        font-size: map-get($medidas, letraParafo);
+        margin-bottom: 0;
+
+        @media only screen and (min-width:1200px) {
+            font-size: 16px;
+            width: 506px;
+
+        }
     }
 
     .Main-imagen {
-        background: url("../assets/img/smartphone/Cesar.webp");
+        background: url("/assets/img/smartphone/Cesar@2x.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height:  map-get($medidasMain, heightCesar);
-        width: map-get($medidasMain, widthImagen);
+        height: map-get($medidas, height-foto);
+        width: map-get($medidas, width-foto);
+
+        @media only screen and (min-width:1200px) {
+            width: 50%;
+            background: url("/assets/img/desktop/Cesar@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-top: 300px;
+            margin-top: 13px;
+        }
+
+
     }
+
+    //ACERCA-DE
 
     .acerca {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width:  map-get($medidasMain, widthAcerca-de);
         background-color: map-get($Colores, AcercaDe);
+        padding: map-get($medidas, marginLados);
+        @media only screen and (min-width:1200px){
+            height: 134px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
     }
 
-    .acerca-de{
-        height: map-get($medidasMain, heightAcerca-de);
+    .acerca-de {
+        margin-Top: 0;
+        text-align: center;
+        @media only screen and (min-width:1200px){
+            font-size: 24px;
+        }
     }
 
-    .acerca-linea {
-        height: map-get($medidasMain, heightAcercade-linea); 
-        width: map-get($medidasMain, widthAcercade-linea);
-        margin-bottom: map-get($medidasMain, paddingLinea);
-        background-color: map-get($Colores, LetraNegra);    
+    .Main-linea-acerca {
+        height: map-get($medidas, heightLinea);
+        width: map-get($medidas, widthLinea);
+        background-color: map-get($Colores, LetraNegra);
         border: none;
+        margin-bottom: 0;
     }
 
     .Main-superior {
-        height: map-get($medidasMain, height-superior);
-        width:  map-get($medidasMain, width-superior);
+        height: map-get($medidas, height-superior);
+        width: map-get($medidas, width-superior);
         background: #A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-    }
 
-    .Main-imagenblack {
-        background: url("../assets/img/smartphone/Black.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width:map-get($medidasMain, widthImagen);
-        height: map-get($medidasMain, heightBlack);
-        display: flex;
-        justify-content: flex-end;
-        align-items: end;
+        @media only screen and (min-width:1200px) {
 
-    }
+            height: 60px;
 
-    .Main-inferior{
-        height: map-get($medidasMain, height-superior);
-        width:  map-get($medidasMain, width-superior);
-        background: #A80499;
-        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+        }
     }
 
     .Main-boton {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: map-get($medidasMain, border-Boton);
-        border-radius: map-get($medidasMain, borderRadius-boton);
-        width: map-get($medidasMain, with-Boton);
-        height: map-get($medidasMain, height-Boton);
-        font-size: map-get($medidasMain, letra-boton);
-        margin: map-get($medidasMain, margin-boton);
-        color: map-get($Colores, LetraLogFontIcono);
+        border: solid gray;
+        width: 114px;
+        height: 44px;
+        border-radius: map-get($medidas, border-radius);
+        margin: map-get($medidas, margin-boton);
+        font-size: map-get($medidas, letra-boton);
         background-color: map-get($Colores, BannerFlojo);
+        color: map-get($Colores, LetraLogFontIcono);
     }
 
+    .Main-imagenblack {
+        background: url("/assets/img/smartphone/Black@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: map-get($medidas, height-black);
+        width: map-get($medidas, width-foto);
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+
+        @media only screen and (min-width:1200px) {
+            background: url("/assets/img/desktop/black.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 700px;
+
+        }
+
+    }
+
+    .Main-inferior {
+        height: map-get($medidas, height-superior);
+        width: map-get($medidas, width-superior);
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+
+        @media only screen and (min-width:1200px) {
+
+            height: 60px;
+
+        }
+    }
+
+    //EVENTOS
     .Eventos {
         background-color: map-get($Colores, baseEcuatoguineano);
-        width:map-get($medidasMain, width-Eventos);
+        width: map-get($medidas, width-Eventos);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        .Eventos-event{
-            height: map-get($medidasMain, heightAcerca-de)
+        .Tipo-evento{
+            text-align: center;
+            @media only screen and (min-width:1200px) {
+                display: flex;
+                gap: 300px;
+            }
         }
-    
+        .Eventos-event {
+            height: map-get($medidas, heightAcerca-de)
+        }
+
         .Eventos-linea {
-            height: map-get($medidasMain, heightLinea);
-            width: map-get($medidasMain, widthLinea);
+            height: map-get($medidas, heightLinea);
+            width: map-get($medidas, widthLinea);
             background-color: map-get($Colores, LetraNegra);
-            margin-bottom: map-get($medidasMain, paddingLinea);
+            margin-bottom: map-get($medidas, paddingLinea);
             border: none;
         }
-        
-    
+
+
         .Eventos-imagen1 {
             background-image: url("../assets/img/smartphone/mindje.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: map-get($medidasMain, widthImagen);
-            height: map-get($medidasMain, heightImagen-Eventos);
+            width: map-get($medidas, width-foto);
+            height: map-get($medidas, height-imagen);
+
+            @media only screen and (min-width:1200px) {
+                background-image: url("../assets/img/desktop/mindje@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 473px;
+                height: 381px;
+            }
         }
 
-        .eventos{
-            margin: map-get($medidasMain, margin-eventos);
+        .eventos {
+            margin: map-get($medidas, margin-eventos);
             text-decoration: none;
-            color: map-get($Colores , LetraNegra );
+            color: map-get($Colores , LetraNegra);
         }
-    
+
         .Eventos-imagen2 {
             background-image: url("../assets/img/smartphone/Buika1.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: map-get($medidasMain, widthImagen);
-            height: map-get($medidasMain, heightImagen-Eventos);
+            width: map-get($medidas, width-foto);
+            height: map-get($medidas, height-imagen);
+
+            @media only screen and (min-width:1200px) {
+                background-image: url("../assets/img/desktop/Buika@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 473px;
+                height: 381px;
+            }
         }
-    
+
     }
 
+    //OTROS EVENTOS
     .OtrosEventos {
         background-color: white;
         display: flex;
@@ -168,133 +257,134 @@
         text-align: center;
         width: 100%;
 
-        .OtrosEventos-otros{
-            margin: map-get($medidasMain, margin-Otros-eventos);
+        .OtrosEventos-otros {
+            margin: map-get($medidas, margin-Otros-eventos);
         }
 
         .OtrosEventos-imagen1 {
-            background-image: url("../assets/img/smartphone/miss.webp");
+            background-image: url("../assets/img/smartphone/miss@2x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: map-get($medidasMain, widthImagen-Otros-eventos);
-            height: map-get($medidasMain, heightImagen-Otros-eventos);
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+
+            @media only screen and (min-width:1200px){
+                background-image: url("../assets/img/desktop/miss@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 330px;
+            }
         }
 
         .OtrosEventos-imagen2 {
-            background-image: url("../assets/img/smartphone/ALBA.webp");
+            background-image: url("../assets/img/smartphone/ALBA@2x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: map-get($medidasMain, widthImagen-Otros-eventos);
-            height: map-get($medidasMain, heightImagen-Otros-eventos);
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+
+            @media only screen and (min-width:1200px){
+                background-image: url("../assets/img/desktop/ISABEL@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 330px;
+            }
         }
 
         .OtrosEventos-imagen3 {
-            background-image: url("../assets/img/smartphone/buika2.webp");
+            background-image: url("../assets/img/smartphone/buika2@3x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: map-get($medidasMain, widthImagen-Otros-eventos);
-            height: map-get($medidasMain, heightImagen-Otros-eventos);
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+
+            @media only screen and (min-width:1200px){
+                background-image: url("../assets/img/desktop/Buika3@2x.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 330px;
+            }
         }
 
-        .OtrosEventos-linea1{
-            height: map-get($medidasMain, heightLinea);
-            width: map-get($medidasMain, widthLinea);
+        .OtrosEventos-linea1 {
+            height: map-get($medidas, heightLinea);
+            width: map-get($medidas, widthLinea);
             background-color: map-get($Colores, LetraNegra);
-            margin-bottom: map-get($medidasMain, paddingLinea);
+            margin-bottom: map-get($medidas, paddingLinea);
             border: none;
         }
 
         .OtrosEventos-linea {
-            width: map-get($medidasMain, widthLinea);
-            height: map-get($medidasMain, heightLinea);
+            width: map-get($medidas, widthLinea);
+            height: map-get($medidas, heightLinea);
             background-color: map-get($Colores, LetraNegra);
-            margin-top: map-get($medidasMain, paddingLinea);
+            margin-top: map-get($medidas, paddingLinea);
             border: none;
+
+            @media only screen and (min-width:1200px){
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
         }
 
-        .OtrosEventos-texto{
-            width:  map-get($medidasMain, widthLetras-Otros-eventos);
-            font-size:  map-get($medidasMain, letra);
-            height: map-get($medidasMain, heightLetra-Otros-eventos);
-        
+        .OtrosEventos-texto {
+            width: map-get($medidas, width-images);
+            font-size: map-get($medidas, letraParafo);
+            padding-bottom: map-get($medidas, paddingLinea);
+            @media only screen and (min-width:1200px){
+                width: 283px;
+                font-size: 15px;
+            }
+
         }
 
         .OtrosEventos-boton {
-            width: map-get($medidasMain, widthBoton-Otros-eventos);
-            height: map-get($medidasMain, heightBoton-Otros-eventos);;
-            background-color:map-get($Colores, Boton);
+            width: map-get($medidas, width-boton);
+            height: map-get($medidas, height-boton);
+            background-color: map-get($Colores, Boton);
             border: none;
-            border-radius: map-get($medidasMain, borderRadius-boton);
+            border-radius: map-get($medidas, border-radius);
             color: map-get($Colores, LetraNegra);
+
+            @media only screen and (min-width:1200px){
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
         }
 
-        a{
+        a {
             text-decoration: none;
-            color: map-get($Colores , LetraLogFontIcono );
+            color: map-get($Colores , LetraLogFontIcono);
         }
 
-        .event{
+        .event {
             margin-bottom: 0;
         }
 
-    }
-
-    /*Login*/
-    .icono{
-        background: url("../assets/img/smartphone/icono-perfil@2x.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: map-get($medidasMain, widthLogin);
-        height: map-get($medidasMain, heightLogin);
-        margin-top: 20px;
-        
-    }
-
-    .Iniciar-Sesion{
-        margin-bottom: map-get($medidasMain, margin-bottom-correo);
-    }
-
-    .formulario2{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-        .correo, .contraseña, .nombre, .apellidos, .confirmar-contraseña{
-            width: map-get($medidasMain,widthinput);
-            height: map-get($medidasMain, heightinput);
-            border: solid gray;
-            border-radius: map-get($medidasMain, borderRadius-boton);
-            margin-bottom: map-get($medidasMain, margin-bottom-registro);
+        .caja{
+            @media only screen and (min-width:1200px){
+                display: flex;
+                gap: 100px;
+            }
         }
 
-        .text{
-           font-size: map-get($medidasMain, fonz);
-           padding-left: map-get($medidasMain, padding-left);
-           margin-top: 0;
-           margin-bottom: map-get($medidasMain, margin-bottom-correo);
+        .bodes{
+            @media only screen and (min-width:1200px){
+                background-color: map-get($Colores, baseEcuatoguineano);
+                padding-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
-        .boton{
-            width: map-get($medidasMain, widthenviar);
-            height: map-get($medidasMain,heightinput);
-            margin-top: map-get($medidasMain, gapinput);
-            background-color:map-get($Colores, Boton);
-            border-radius: map-get($medidasMain, borderRadius-boton);
-            color: map-get($Colores, LetraLogFontIcono);
-            margin-bottom: map-get($medidasMain, margin-bottom-boton);
-        }
-
-        a{
-            text-decoration: none;
-        }
-
-        .registro{
-            margin-bottom: map-get($medidasMain, margin-bottom-crear);
-        }
     }
 
 }
