@@ -149,7 +149,7 @@
 }
 .Header-Logo{
     color: map-get($Colores, letraLogo);
-    padding-right: 100px;
+    // padding-right: 100px;
 }
 .Header-Navbar{
     background:#A80499;
@@ -161,40 +161,38 @@
         align-items: center;
         justify-content: space-around;
         position: fixed;
-    @media only screen and (min-width:1200px){
-        display: flex;
-        align-items: center;
+    @media only screen and (min-width:1366px){
+        // display: flex;
+        // align-items: center;
 
     }
 
     .Logos{
         display: flex;
         gap: map-get($medidasHeader ,GapLogos );
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             display: flex;
-            justify-content: center;
-            align-items: center;
-            // padding-left: 140px;
         }
     }
 
     .logos img{
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             display: none;
         }
     }
     .login::after{
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             content: "INICIAR SESION";
         }
     }
 
     .login-registro{
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             display: flex;
             align-items: center;
             gap: 40px;
-            padding-left: 170px;
+            //padding-left: 170px;
+            
             order: 2;
         }
         
@@ -202,7 +200,7 @@
 
     .registro{
         display: none;
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             display: flex;
             align-items: center;
             justify-content: center;
@@ -213,26 +211,25 @@
         }
     }
     .Header-Iconologin{
-        @media only screen and (min-width:1200px){
+        @media only screen and (min-width:1366px){
             display: none;
         }
         width: map-get($medidasHeader ,widthIcono );
         height: map-get($medidasHeader ,heightIcono );
     }
     .Header-desplegable{
-        // display: none;
-        // position: absolute;
-        // flex-direction: row;
-        // right: 0px;
-        // top: 60px;
-        // width: map-get($medidasHeader ,widthDesplegables );
-        // height: map-get($medidasHeader ,heightDesplegables );
-        // list-style: none;
-        @media only screen and (min-width:1200px){
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        width: map-get($medidasHeader ,widthDesplegables );
+        height: map-get($medidasHeader ,heightDesplegables );
+        list-style: none;
+        @media only screen and (min-width:1366px){
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-right: 210px;
+            flex-direction: row;
             gap: 40px;
             list-style: none;
         }
@@ -244,7 +241,7 @@
 }
 
 .Header-iconoHamburguesa{
-    @media only screen and (min-width:1200px){
+    @media only screen and (min-width:1366px){
         display: none;
     }
 }

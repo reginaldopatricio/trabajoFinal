@@ -375,7 +375,6 @@ body {
 
 .Header-Logo {
   color: #A83ADE;
-  padding-right: 100px;
 }
 
 .Header-Navbar {
@@ -394,46 +393,30 @@ body {
       justify-content: space-around;
   position: fixed;
 }
-@media only screen and (min-width: 1200px) {
-  .Header-Navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 .Header-Navbar .Logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .Logos {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .logos img {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .login::after {
     content: "INICIAR SESION";
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .login-registro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,7 +425,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 40px;
-    padding-left: 170px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -451,7 +433,7 @@ body {
 .Header-Navbar .registro {
   display: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .registro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -474,12 +456,21 @@ body {
   width: 30px;
   height: 30px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .Header-Iconologin {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
+.Header-Navbar .Header-desplegable {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+}
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .Header-desplegable {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -490,7 +481,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 210px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 40px;
     list-style: none;
   }
@@ -498,7 +492,7 @@ body {
 .Header-Navbar .Header-despliega {
   display: none;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1366px) {
   .Header-Navbar .Header-iconoHamburguesa {
     display: none;
   }
