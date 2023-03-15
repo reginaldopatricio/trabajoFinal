@@ -136,6 +136,14 @@ Main {
         font-size: map-get($medidas, letra-boton);
         background-color: map-get($Colores, BannerFlojo);
         color: map-get($Colores, LetraLogFontIcono);
+
+        @media only screen and (min-width:1200px){
+            width: 317px;
+            height: 102px;
+            margin-bottom: 200px;
+            margin-right: 250px;
+        }
+
     }
 
     .Main-imagenblack {
