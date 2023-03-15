@@ -11,35 +11,51 @@
 
 <body>
     <!--HEADER-->
-    <Header class="Header2">
-        <section class="Navbar">
+    <header class="Header">
+        <section class="Header-Navbar">
             <!--Logo-->
-            <h1 class="Navbar-Logo">EVENTTIME</h1>
-            <!--Icono-->
-            <a href="index.html"><img src="./assets/img/svg/Inicio.svg" /></a>
+            <h1 class="Header-Logo">EVENTTIME</h1>
+            <section class="Logos">
+                <!--Icono-login-->
+                <section class="login-registro">
+                    <a href="registro.html" class="registro">Registro</a>
+                    <a class="login" href="login.html"></a>
+                </section>
+                <a href="index.html"><img class="inicio" src="./assets/img/svg/Inicio.svg" /></a>
+                <!--Desplegable-->
+                <ul class="Header-desplegable">
+                    <li><a class="liks" href="index.html">INICIO</a></li>
+                    <li><a class="liks" href="acerca_de.html">ACERCA DE.</a></li>
+                    <li><a class="liks" href="eventos.html">EVENTOS</a></li>
+                    <li><a class="liks" href="otros_eventos.html">OTROS EVENTOS</a></li>
+                    <li><a class="liks" href="contactanos.html">CONTACTANOS</a></li>
+                </ul>
+            </section>
         </section>
+    </header>
+    <main class="Main2">
         <section class="Fondo">
             <h3 class="Fondo-texto">EVENTOS</h3>
         </section>
-    </Header>
-    <main class="Main">
         <section class="Eventos">
-            <h3 class="Eventos-event">EVENTOS</h3>
             <hr class="Eventos-linea">
-            <a href="#">
-                <article class="Eventos-imagen1"></article>
-            </a>
-            <a class="eventos" href="#">Proximos eventos</a>
-            <hr class="Eventos-linea">
-            <a href="eventos_pasados.html">
-                <article class="Eventos-imagen2"></article>
-            </a>
-            <a class="eventos" href="eventos_pasados.html">Eventos pasados</a>
-            <hr class="Eventos-linea">
+            <section class="Tipo-evento">
+                <a class="Proximos" href="login2.html">
+                    <article class="Eventos-imagen1"></article>
+                    <p class="eventos">Proximos eventos</p>
+                    <hr class="Eventos-linea">
+                </a>
+
+                <a class="Pasados" href="eventos_pasados.html">
+                    <article class="Eventos-imagen2"></article>
+                    <p class="eventos">Eventos pasados</p>
+                    <hr class="Eventos-linea">
+                </a>
+            </section>
         </section>
     </main>
-     <!--FOOTER-->
-     <footer class="Footer">
+    <!--FOOTER-->
+    <footer class="Footer">
         <h4 class="eventTime">EVENTTIME</h4>
         <section class="Footer-Comentario">
             <p class="Footer-texto">Todavía es desconcertante.

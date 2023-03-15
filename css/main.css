@@ -978,6 +978,7 @@ Main .OtrosEventos .event {
     width: 1141px;
     height: 218px;
     margin-top: 70px;
+    margin-bottom: 70px;
   }
 }
 .Main2 .Archivo {
@@ -1226,6 +1227,12 @@ Main .OtrosEventos .event {
   .Main2 .texto {
     width: 692px;
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .Eventos {
+    width: 100%;
+    padding-top: 30px;
   }
 }
 .Main2 .eventTime {
