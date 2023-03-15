@@ -11,26 +11,44 @@
 
 <body class="contenedor">
     <!--HEADER-->
-    <Header class="Header2">
-        <section class="Navbar2">
+    <header class="Header">
+        <section class="Header-Navbar">
             <!--Logo-->
-            <h1 class="Navbar-Logo">EVENTTIME</h1>
-            <!--Icono-->
-            <a href="index.html"><img src="./assets/img/svg/retroceder.svg" /></a>
+            <h1 class="Header-Logo">EVENTTIME</h1>
+            <section class="Logos">
+                <!--Icono-login-->
+                <section class="login-registro">
+                    <a href="registro.html" class="registro">Registro</a>
+                    <a class="login" href="login.html"></a>
+                </section>
+                <a href="index.html"><img class="inicio" src="./assets/img/svg/retroceder.svg" /></a>
+                <!--Desplegable-->
+                <ul class="Header-desplegable">
+                    <li><a class="liks" href="index.html">INICIO</a></li>
+                    <li><a class="liks" href="acerca_de.html">ACERCA DE.</a></li>
+                    <li><a class="liks" href="eventos.html">EVENTOS</a></li>
+                    <li><a class="liks" href="otros_eventos.html">OTROS EVENTOS</a></li>
+                    <li><a class="liks" href="contactanos.html">CONTACTANOS</a></li>
+                </ul>
+            </section>
         </section>
-    </Header>
+    </header>
     <!--MAIN-->
     <main class="Main">
-        <article class="icono"></article>
-        <h3 class="Iniciar-Sesion">INICIAR SESION</h3>
-        <form action="inicio.html" class="formulario2">
-            <input type="text" id="correo-electronico" name="correo-electronico" class="correo"
-                placeholder="correo electronico">
-            <input type="password" id="password" name="password" class="contraseña" placeholder="contraseña">
-            <a href="#" class="text">Te has olvidado de la contraseña?</a>
-            <input type="submit" value="Entrar" class="boton">
-            <a class="registro" href="registro.html">Crear cuenta</a>
-        </form>
+        <section class="CajaPrincipal">
+            <section class="cajaForm">
+                <article class="icono"></article>
+                <h3 class="Iniciar-Sesion">INICIAR SESION</h3>
+                <form action="inicio.html" class="formulario2">
+                    <input type="text" id="correo-electronico" name="correo-electronico" class="correo"
+                        placeholder="correo electronico">
+                    <input type="password" id="password" name="password" class="contraseña1" placeholder="contraseña">
+                    <a href="#" class="text">Te has olvidado de la contraseña?</a>
+                    <input type="submit" value="Entrar" class="boton">
+                    <a class="registro" href="registro.html">Crear cuenta</a>
+                </form>
+            </section>
+        </section>
     </main>
 
     <!--FOOTER-->

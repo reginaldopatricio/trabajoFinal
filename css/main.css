@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ********* */
 /* @NORMALIZE */
 /* ********* */
@@ -934,6 +935,112 @@ Main .OtrosEventos .event {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+Main .icono {
+  background-image: url("../assets/img/smartphone/icono-perfil@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 149px;
+  height: 115px;
+}
+Main .cajaForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 1200px) {
+  Main .cajaForm {
+    background-color: #D9D9D9;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  Main .CajaPrincipal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px;
+  }
+}
+Main .formulario2 {
+  width: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+Main .correo, Main .contraseña, Main .nombre, Main .confirmar-contraseña, Main .apellidos {
+  width: 262px;
+  height: 40px;
+  border: solid gray;
+  border-radius: 10px;
+}
+Main .contraseña1 {
+  width: 262px;
+  height: 40px;
+  border: solid gray;
+  border-radius: 10px;
+}
+Main .contraseña, Main .nombre, Main .confirmar-contraseña, Main .apellidos {
+  margin-bottom: 30px;
+}
+Main .boton2 {
+  width: 149px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #43045D;
+  border-radius: 10px;
+  color: #C5D3E3;
+  margin-bottom: 30px;
+}
+Main .correo {
+  margin-bottom: 30px;
+}
+Main .text {
+  font-size: 10px;
+  text-decoration: none;
+  padding-left: 125px;
+}
+Main .registro {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+Main .boton {
+  width: 149px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #43045D;
+  border-radius: 10px;
+  color: #C5D3E3;
 }
 
 .Main2 {
