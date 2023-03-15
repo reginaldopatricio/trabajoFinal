@@ -10,52 +10,73 @@
 </head>
 
 <body>
-    <!--HEADER-->
-    <Header class="Header2">
-        <section class="Navbar">
-            <!--Logo-->
-            <h1 class="Navbar-Logo">EVENTTIME</h1>
-            <!--Icono-->
-            <a href="inicio.html"><img src="./assets/img/svg/Inicio.svg" /></a>
-        </section>
-        <section class="Fondo">
-            <h3 class="Fondo-texto">EVENTOS</h3>
-        </section>
-    </Header>
-    <main class="Main">
-        <section class="Eventos">
-            <h3 class="Eventos-event">EVENTOS</h3>
-            <hr class="Eventos-linea">
-            <a href="proximos_eventos.html">
-                <article class="Eventos-imagen1"></article>
-            </a>
-            <a class="eventos" href="proximos_eventos.html">Proximos eventos</a>
-            <hr class="Eventos-linea">
-            <a href="eventos_pasados2.html">
-                <article class="Eventos-imagen2"></article>
-            </a>
-            <a class="eventos" href="eventos_pasados2.html">Eventos pasados</a>
-            <hr class="Eventos-linea">
-        </section>
-    </main>
-     <!--FOOTER-->
-     <footer class="Footer">
-        <h4 class="eventTime">EVENTTIME</h4>
-        <section class="Footer-Comentario">
-            <p class="Footer-texto">Todavía es desconcertante.
-                Puedes disfrutarlo al máximo</p>
-        </section>
-        <section class="lista">
-            <p class="list1">Acerca de.</p>
-            <p class="list2">Eventos</p>
-            <p class="list3">Otros eventos</p>
-            <p class="list4">Contactos</p>
-            <a class="list5">Politia de privacidad</a>
-            <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
-            <h4 class="list7">EVENT</h4>
-            <h4 class="list8">TIME</h4>
-        </section>
-    </footer>
+        <!--HEADER-->
+        <header class="Header">
+            <section class="Header-Navbar">
+                <!--Logo-->
+                <h1 class="Header-Logo">EVENTTIME</h1>
+                <section class="Logos">
+                    <!--Icono-login-->
+                    <section class="lupa">
+                        <input class="busca"><img class="Buscar"
+                        src="./assets/img/svg/lupa.svg"></img></input>
+                    </section>
+                    <!--Icono-despliegue-->
+                    <input class="Header-despliega" type="checkbox" id="Header-boton">
+                    <label for="Header-boton">
+                        <!-- icono de hamburguesa-->
+                        <img class="Header-iconoHamburguesa" src="./assets/img/svg/Menú.svg" />
+                    </label>
+                    <!--Desplegable-->
+                    <ul class="Header-desplegable">
+                        <li><a class="liks" href="inicio.html">INICIO</a></li>
+                        <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
+                        <li><a class="liks" href="eventos2.html">EVENTOS</a></li>
+                        <li><a class="liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
+                        <li><a class="liks" href="contactanos2.html">CONTACTANOS</a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <main class="Main2">
+            <section class="Fondo">
+                <h3 class="Fondo-texto">EVENTOS</h3>
+            </section>
+            <section class="Eventos">
+                <hr class="Eventos-linea">
+                <section class="Tipo-evento">
+                    <a class="Proximos" href="login2.html">
+                        <article class="Eventos-imagen1"></article>
+                        <p class="eventos">Proximos eventos</p>
+                        <hr class="Eventos-linea">
+                    </a>
+    
+                    <a class="Pasados" href="eventos_pasados.html">
+                        <article class="Eventos-imagen2"></article>
+                        <p class="eventos">Eventos pasados</p>
+                        <hr class="Eventos-linea">
+                    </a>
+                </section>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer class="Footer">
+            <h4 class="eventTime">EVENTTIME</h4>
+            <section class="Footer-Comentario">
+                <p class="Footer-texto">Todavía es desconcertante.
+                    Puedes disfrutarlo al máximo</p>
+            </section>
+            <section class="lista">
+                <p class="list1">Acerca de.</p>
+                <p class="list2">Eventos</p>
+                <p class="list3">Otros eventos</p>
+                <p class="list4">Contactos</p>
+                <a class="list5">Politia de privacidad</a>
+                <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
+                <h4 class="list7">EVENT</h4>
+                <h4 class="list8">TIME</h4>
+            </section>
+        </footer>
 </body>
 
 </html>
