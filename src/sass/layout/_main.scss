@@ -403,6 +403,7 @@ Main {
                 height: map-get($medidasHeaderAcerca, heightFondo );
                 width: 100%;
                 margin-top: 30px;
+                margin-bottom: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -660,6 +661,43 @@ Main {
         width: map-get($medidasMainAcerca, widthgeneral );
 
     }
+
+    .ImagenesTextos1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width:1200px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 85%;
+        }
+    }
+
+    .ImagenesTextos2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width:1200px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 85%;
+        }
+    }
+
+    .ImagenesTextos3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width:1200px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 85%;
+            
+        }
+    }
     .Imagen-miss{
         background: url("../assets/img/smartphone/miss2@2x.webp");
         background-repeat: no-repeat;
@@ -668,6 +706,15 @@ Main {
         width: map-get($medidasMainAcerca, weightimagenMindje);
         height: map-get($medidasMainAcerca, heightImagen-otros);
         margin-top:map-get($medidasMainAcerca, marginOtros-eventos );
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/miss1@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 647px;
+            height: 349px;
+            margin-bottom: 30px;
+        }
     }
 
     .Imagen-ISABEL{
@@ -677,6 +724,18 @@ Main {
         background-position: center;
         width: map-get($medidasMainAcerca, weightimagenMindje);
         height: map-get($medidasMainAcerca, heightImagen-otros);
+
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/ALBA@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 647px;
+            height: 349px;
+            order: 2;
+            // margin-left: 60px;
+            margin-bottom: 30px;
+        }
     }
 
     .Imagen-Buika{
@@ -686,6 +745,16 @@ Main {
         background-position: center;
         width: map-get($medidasMainAcerca, weightimagenMindje);
         height: map-get($medidasMainAcerca, heightImagen-otros);
+
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/BuikaDesk@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 647px;
+            height: 349px;
+            margin-bottom: 30px;
+        }
     }
 
     .texto-OtrosEventos{
@@ -693,6 +762,13 @@ Main {
         width: map-get($medidasMainAcerca, widthletra-acerca );
         font-size: map-get($medidasMainAcerca, letraParafo );
         padding-bottom: map-get($medidasMainAcerca, margin-bottom-letra );
+        text-align: center;
+        @media only screen and (min-width:1200px){
+            display: flex;
+            align-items: center;
+            padding-left: 200px;
+        }
+
     }
 
     /*Contactanos*/
