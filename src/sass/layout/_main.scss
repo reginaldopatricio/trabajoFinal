@@ -1052,7 +1052,12 @@ Main {
         text-align: justify;
     }
 
+    .contenido{
+        padding-left: 20px;
+    }
+
     .Main3-textos{
+        font-size: 14px;
         @media only screen and (min-width:1200px){
             font-size: 20px;
         }
@@ -1069,7 +1074,7 @@ Main {
     }
 
     .Main3-Buika{
-        background: url("../assets/img/smartphone/Buika5.webp.webp");
+        background: url("../assets/img/smartphone/Buika5.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
