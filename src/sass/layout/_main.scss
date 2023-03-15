@@ -405,7 +405,7 @@ Main {
         margin-top: 15px;
         @media only screen and (min-width:1200px){
             background-color: #D9D9D9;
-            width: 400px;
+            width: 300px;
             padding: 30px;
             border-radius: 10px;
         }
@@ -467,7 +467,7 @@ Main {
     .text{
         font-size: 10px;
         text-decoration: none;
-        padding-left: 125px;
+        padding-left: 120px;
     }
 
     .registro{
@@ -925,9 +925,12 @@ Main {
         flex-direction: column;
         align-items: center;
         border-radius: 10px;
+        padding: 20px;
 
         @media only screen and (min-width:1200px){
-            width: 500px;
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
         
         .nombre-apellidos, .telefono, .correo{
@@ -935,9 +938,11 @@ Main {
             height: map-get($medidasMain, heightinput);
             border: solid gray;
             border-radius: map-get($medidasMain, borderRadius-boton);
+            
 
             @media only screen and (min-width:1200px){
-                width: 400px;
+                width: 300px;
+                height: 50px;
             }
         }
 
@@ -947,7 +952,7 @@ Main {
             border: solid gray;
             border-radius: map-get($medidasMain, borderRadius-boton);
             @media only screen and (min-width:1200px){
-                width: 400px;
+                width: 300px;
             }
         }
 

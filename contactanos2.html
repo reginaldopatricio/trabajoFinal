@@ -8,32 +8,63 @@
     <title>Contactanos</title>
 </head>
 <body>
-    <!--HEADER-->
-    <Header class="Header2">
-        <section class="Navbar">
-            <!--Logo-->
-            <h1 class="Navbar-Logo">EVENTTIME</h1>
-            <!--Icono-->
-            <a href="inicio.html"><img src="./assets/img/svg/Inicio.svg" /></a>
-        </section>
+          <!--HEADER-->
+          <header class="Header">
+            <section class="Header-Navbar">
+                <!--Logo-->
+                <h1 class="Header-Logo">EVENTTIME</h1>
+                <section class="Logos">
+                    <!--Icono-login-->
+                    <section class="lupa">
+                        <input class="busca"><img class="Buscar"
+                        src="./assets/img/svg/lupa.svg"></img></input>
+                    </section>
+                    <!--Icono-despliegue-->
+                    <input class="Header-despliega" type="checkbox" id="Header-boton">
+                    <label for="Header-boton">
+                        <!-- icono de hamburguesa-->
+                        <img class="Header-iconoHamburguesa" src="./assets/img/svg/Menú.svg" />
+                    </label>
+                    <!--Desplegable-->
+                    <ul class="Header-desplegable">
+                        <li><a class="liks" href="inicio.html">INICIO</a></li>
+                        <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
+                        <li><a class="liks" href="eventos2.html">EVENTOS</a></li>
+                        <li><a class="liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
+                        <li><a class="liks" href="contactanos2.html">CONTACTANOS</a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+    <!--Main-->
+    <main class="Main2">
         <section class="Fondo">
             <h3 class="Fondo-texto">CONTACTANOS</h3>
         </section>
-    </Header>
-    <!--Main-->
-    <main class="Main2">
-        <p class="form-texto">Usa éste formulario para ponerte en contacto con nosotros. !queremos conocer tu historia!</p>
-        <form action="" class="formulario">
-            <label for="nombre-apellidos" class="nombre">Nombre y apellidos <span>(requeridos)</span></label>
-            <input type="text" id="nombre-apellidos" class="nombre-apellidos" name="nombre-apellidos" >
-            <label for="telefono"  class="tel">telefono <span>(requeridos) </span></label>
-            <input type="number" id="telefono" name="telefono" class="telefono">
-            <label for="correo-electronico" class="cor">correo electronico <span>(requeridos)</span></label>
-            <input type="text" id="correo-electronico" name="correo-electronico" class="correo">
-            <label for="mensaje" class="mens">Mensaje <span>(requeridos)</span></label>
-            <input type="text" id="mensaje" name="mensaje" class="mensaje">
-            <input type="submit" value="Enviar" class="boton">
-        </form>
+        <section class="cajas">
+            <section class="primeraCaja">
+                <h3 class="equipo" >EQUIPO EVENTTIME</h3>
+                <p class="contenido">Como resultado de un increíble grupo de personas que apoyan a EVENTTIME en Edib, he podido dar luz verde a una serie de proyectos increíbles, incluido las versiones siguientes de ésta página,
+                    Únete a nosotros, para que podamos seguir creando.
+                    ¡Por una suscripción  puede recibir contenido exclusivo de EVENTTIME que incluye acceso temprano a edicion de tu propio evento, publicaciones de blog, !</p>
+            </section>
+            <section class="segundaCaja">
+                <p class="form-texto">Usa éste formulario para ponerte en contacto con nosotros. !queremos conocer tu historia!
+                </p>
+                <form action="" class="formulario">
+                    <label for="nombre-apellidos" class="nombres">Nombre y apellidos <span>(requeridos)</span></label>
+                    <input type="text" id="nombre-apellidos" class="nombre-apellidos" name="nombre-apellidos">
+                    <label for="telefono" class="tel">telefono <span>(requeridos) </span></label>
+                    <input type="number" id="telefono" name="telefono" class="telefono">
+                    <label for="correo-electronico" class="cor">correo electronico <span>(requeridos)</span></label>
+                    <input type="text" id="correo-electronico" name="correo-electronico" class="correo">
+                    <label for="mensaje" class="mens">Mensaje <span>(requeridos)</span></label>
+                    <input type="text" id="mensaje" name="mensaje" class="mensaje">
+                    <input type="submit" value="Enviar" class="boton">
+                </form>
+            </section>
+        </section>
+        
         <h4 class="eventTime">EVENTTIME</h4>
     </main>
 
