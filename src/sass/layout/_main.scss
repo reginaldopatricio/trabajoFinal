@@ -772,8 +772,50 @@ Main {
     }
 
     /*Contactanos*/
+
+    .equipo, .contenido{
+        display: none;
+        @media only screen and (min-width:1200px){
+            display: flex;
+            font-size: 16px;
+            color: map-get($Colores, LetraLogFontIcono );
+        }
+    }
+    .equipo{
+        @media only screen and (min-width:1200px){
+            padding-bottom: 30px;
+        }
+    }
+
+    .cajas{
+        @media only screen and (min-width:1200px){
+            display: flex;
+            gap: 200px;
+        }
+    }
+
+    .segundaCaja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido{
+        @media only screen and (min-width:1200px){
+            width: 281px;
+        }
+    }
+
     .form-texto{
-        color:  map-get($Colores, LetraLogFontIcono);;
+        color:  map-get($Colores, LetraLogFontIcono);
+        font-size: 12px;
+        width: 315px;
+        @media only screen and (min-width:1200px){
+            width: 500px;
+            padding-bottom: 30px;
+            font-size: 16px;
+        }
     }
     
     .formulario{
@@ -783,12 +825,21 @@ Main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 10px;
+
+        @media only screen and (min-width:1200px){
+            width: 500px;
+        }
         
         .nombre-apellidos, .telefono, .correo{
             width: map-get($medidasMain,widthinput);
             height: map-get($medidasMain, heightinput);
             border: solid gray;
             border-radius: map-get($medidasMain, borderRadius-boton);
+
+            @media only screen and (min-width:1200px){
+                width: 400px;
+            }
         }
 
         .mensaje{
@@ -796,6 +847,9 @@ Main {
             height: map-get($medidasMain, heigthmensaje);
             border: solid gray;
             border-radius: map-get($medidasMain, borderRadius-boton);
+            @media only screen and (min-width:1200px){
+                width: 400px;
+            }
         }
 
         .nombre{
@@ -816,6 +870,7 @@ Main {
             background-color:map-get($Colores, Boton);
             border-radius: map-get($medidasMain, borderRadius-boton);
             color: map-get($Colores, LetraLogFontIcono);
+            margin-bottom: 30px;
         }
     }
 

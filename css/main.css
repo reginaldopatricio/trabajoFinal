@@ -1409,8 +1409,62 @@ Main .OtrosEventos .event {
     padding-left: 200px;
   }
 }
+.Main2 .equipo, .Main2 .contenido {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .equipo, .Main2 .contenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    color: #C5D3E3;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .equipo {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .cajas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 200px;
+  }
+}
+.Main2 .segundaCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .contenido {
+    width: 281px;
+  }
+}
 .Main2 .form-texto {
   color: #C5D3E3;
+  font-size: 12px;
+  width: 315px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .form-texto {
+    width: 500px;
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
 }
 .Main2 .formulario {
   width: 315px;
@@ -1426,6 +1480,12 @@ Main .OtrosEventos .event {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .formulario {
+    width: 500px;
+  }
 }
 .Main2 .formulario .nombre-apellidos, .Main2 .formulario .telefono, .Main2 .formulario .correo {
   width: 262px;
@@ -1433,11 +1493,21 @@ Main .OtrosEventos .event {
   border: solid gray;
   border-radius: 10px;
 }
+@media only screen and (min-width: 1200px) {
+  .Main2 .formulario .nombre-apellidos, .Main2 .formulario .telefono, .Main2 .formulario .correo {
+    width: 400px;
+  }
+}
 .Main2 .formulario .mensaje {
   width: 262px;
   height: 111px;
   border: solid gray;
   border-radius: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main2 .formulario .mensaje {
+    width: 400px;
+  }
 }
 .Main2 .formulario .nombre {
   margin-top: 30px;
@@ -1452,6 +1522,7 @@ Main .OtrosEventos .event {
   background-color: #43045D;
   border-radius: 10px;
   color: #C5D3E3;
+  margin-bottom: 30px;
 }
 
 /*Eventos pasados*/
