@@ -1176,6 +1176,15 @@ Main {
         background-position: center;
         width: map-get($medidasMain, widthEventos-pasados);
         height: map-get($medidasMain, heightEventos-pasados);
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/romy_so_love 1@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 451px;
+            height: 480px;
+            order: 2;
+        }
     }
 
     .Main3-Buika{

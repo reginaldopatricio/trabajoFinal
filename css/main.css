@@ -541,6 +541,16 @@ Header .liks {
     display: none;
   }
 }
+Header .retrocede {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  Header .retrocede {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 /* ********* */
 /* @HMAIN */
@@ -1870,6 +1880,19 @@ Main .boton {
   background-position: center;
   width: 328px;
   height: 159px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-imagenRomy {
+    background: url("../assets/img/desktop/romy_so_love 1@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 451px;
+    height: 480px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 .Main3 .Main3-Buika {
   background: url("../assets/img/smartphone/Buika5.webp");
