@@ -1206,5 +1206,33 @@ Main {
         }
     }
 
+    .Main3-imagen4{
+        background: url("../assets/img/smartphone/Vanilla-karr@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+
+    }
+
+    .Main3-imagen5{
+        background: url("../assets/img/smartphone/Mba@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+        margin-top: 30px;
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Mba@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 451px;
+            height: 480px;
+        }
+    }
+
 
 }

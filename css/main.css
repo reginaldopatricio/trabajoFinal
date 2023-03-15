@@ -1915,6 +1915,33 @@ Main .boton {
             order: 2;
   }
 }
+.Main3 .Main3-imagen4 {
+  background: url("../assets/img/smartphone/Vanilla-karr@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 159px;
+}
+.Main3 .Main3-imagen5 {
+  background: url("../assets/img/smartphone/Mba@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 159px;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-imagen5 {
+    background: url("../assets/img/desktop/Mba@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 451px;
+    height: 480px;
+  }
+}
 
 /* ********* */
 /* @NAVIGATOR */
