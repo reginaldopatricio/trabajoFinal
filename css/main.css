@@ -1709,11 +1709,30 @@ Main .boton {
     gap: 40px;
   }
 }
+.Main3 .cajaGeneral2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media only screen and (min-width: 1200px) {
   .Main3 .cajaGeneral2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 40px;
     margin-bottom: 50px;
   }
@@ -1729,7 +1748,7 @@ Main .boton {
   .Main3 .general2 {
     width: 634px;
     text-align: justify;
-    padding-top: 20px;
+    padding-bottom: 50px;
   }
 }
 .Main3 .textoBuika {
@@ -1921,7 +1940,17 @@ Main .boton {
   background-size: cover;
   background-position: center;
   width: 328px;
-  height: 159px;
+  height: 217px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-imagen4 {
+    background: url("../assets/img/desktop/Vanilla-karr@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 328px;
+    height: 217px;
+  }
 }
 .Main3 .Main3-imagen5 {
   background: url("../assets/img/smartphone/Mba@2x.webp");
@@ -1938,8 +1967,8 @@ Main .boton {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 451px;
-    height: 480px;
+    width: 328px;
+    height: 217px;
   }
 }
 

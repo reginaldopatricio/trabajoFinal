@@ -1004,8 +1004,13 @@ Main {
     }
 
     .cajaGeneral2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         @media only screen and (min-width:1200px){
             display: flex;
+            flex-direction: row;
             gap: 40px;
             margin-bottom: 50px;
         }
@@ -1023,8 +1028,7 @@ Main {
         @media only screen and (min-width:1200px){
             width: 634px;
             text-align: justify;
-            padding-top: 20px;
-            
+            padding-bottom: 50px;
         }
     }
 
@@ -1045,9 +1049,8 @@ Main {
         }
     }
     .Main3-texto {
-        font-size: map-get($medidasMain,  letras );
-
-
+        //font-size: map-get($medidasMain,  letras );
+        font-size: 14px;
     }
 
     .Boton {
@@ -1212,7 +1215,15 @@ Main {
         background-size: cover;
         background-position: center;
         width: map-get($medidasMain, widthEventos-pasados);
-        height: map-get($medidasMain, heightEventos-pasados);
+        height: 217px;
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Vanilla-karr@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidasMain, widthEventos-pasados);
+            height: 217px;
+        }
 
     }
 
@@ -1229,8 +1240,8 @@ Main {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: 451px;
-            height: 480px;
+            width: map-get($medidasMain, widthEventos-pasados);
+            height: 217px;
         }
     }
 
