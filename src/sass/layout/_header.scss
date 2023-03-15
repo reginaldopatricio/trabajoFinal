@@ -192,12 +192,12 @@ Header {
         width: map-get($medidas , widthDesplegables);
         height: map-get($medidas , heightDesplegables);
         gap: map-get($medidas , HeaderGap);
+        color: map-get($Colores , baseEcuatoguineano);
         @media only screen and (min-width:1200px) {
             display: flex;
             justify-content: center;
             top: map-get($medidas , desktop-Top);
             right: map-get($medidas , desktop-rigth);
-            color: map-get($Colores , baseEcuatoguineano);
         }
     }
 
@@ -279,7 +279,7 @@ Header {
     }
 
     .liks{
-        color: map-get($Colores , LetraNegra);
+        color: map-get($Colores , LetraLogFontIcon);
     }
 
     .inicio{
