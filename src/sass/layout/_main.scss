@@ -942,6 +942,7 @@ Main {
     .Main3-texto {
         font-size: map-get($medidasMain,  letras );
 
+
     }
 
     .Boton {
@@ -1013,21 +1014,49 @@ Main {
         background-color: map-get($Colores, LetraNegra);
         margin-bottom: map-get($medidasMain, paddingLinea);
         border: none;
+        @media only screen and (min-width:1200px){
+            width: 351px;
+            height: map-get($medidas, heightLinea);
+            background-color: map-get($Colores, LetraNegra);
+            border: none;
+            margin-bottom: 50px;
+        }
     }
+    .contenedorGeneral{
+        @media only screen and (min-width:1200px){
+            display: flex;
+            gap: 100px;
+            margin-bottom: 90px;
+        }
+    }
+
     .linea{
         width: map-get($medidasMain, widthlinealarga);
         height: map-get($medidasMain, heightlinealarga);
         background-color: map-get($Colores, LetraNegra);
         margin-bottom: map-get($medidasMain, paddingLinea);
         border: none;
+        @media only screen and (min-width:1200px){
+            width: 550px;
+        }
     }
 
     .texto{
         text-align: justify;
         width: map-get($medidasMain, widthLetra);
+        @media only screen and (min-width:1200px){
+            width: 550px;
+        }
     }
     .Caja{
         text-align: justify;
+    }
+
+    .Main3-textos{
+        @media only screen and (min-width:1200px){
+            font-size: 20px;
+        }
+        
     }
 
     .Main3-imagenRomy{
@@ -1037,6 +1066,25 @@ Main {
         background-position: center;
         width: map-get($medidasMain, widthEventos-pasados);
         height: map-get($medidasMain, heightEventos-pasados);
+    }
+
+    .Main3-Buika{
+        background: url("../assets/img/smartphone/Buika5.webp.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: map-get($medidasMain, heightEventos-pasados);
+
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Buika6@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 451px;
+            height: 480px;
+            order: 2;
+        }
     }
 
 

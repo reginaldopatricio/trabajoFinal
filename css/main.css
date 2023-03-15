@@ -1683,6 +1683,24 @@ Main .OtrosEventos .event {
   margin-bottom: 20px;
   border: none;
 }
+@media only screen and (min-width: 1200px) {
+  .Main3 .lineaEdicion {
+    width: 351px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .contenedorGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 90px;
+  }
+}
 .Main3 .linea {
   width: 290px;
   height: 1px;
@@ -1690,12 +1708,27 @@ Main .OtrosEventos .event {
   margin-bottom: 20px;
   border: none;
 }
+@media only screen and (min-width: 1200px) {
+  .Main3 .linea {
+    width: 550px;
+  }
+}
 .Main3 .texto {
   text-align: justify;
   width: 314px;
 }
+@media only screen and (min-width: 1200px) {
+  .Main3 .texto {
+    width: 550px;
+  }
+}
 .Main3 .Caja {
   text-align: justify;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-textos {
+    font-size: 20px;
+  }
 }
 .Main3 .Main3-imagenRomy {
   background: url("../assets/img/smartphone/romy_so_love3.webp");
@@ -1704,6 +1737,27 @@ Main .OtrosEventos .event {
   background-position: center;
   width: 328px;
   height: 159px;
+}
+.Main3 .Main3-Buika {
+  background: url("../assets/img/smartphone/Buika5.webp.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 159px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-Buika {
+    background: url("../assets/img/desktop/Buika6@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 451px;
+    height: 480px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 /* ********* */
