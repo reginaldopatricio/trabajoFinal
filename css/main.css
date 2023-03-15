@@ -1712,6 +1712,7 @@ Main .boton {
   .Main3 .general1 {
     width: 634px;
     text-align: justify;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {

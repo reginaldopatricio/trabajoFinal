@@ -9,46 +9,78 @@
 </head>
 <body>
     <!--HEADER-->
-    <Header class="Header2">
-        <section class="Navbar2">
+    <header class="Header">
+        <section class="Header-Navbar">
             <!--Logo-->
-            <h1 class="Navbar-Logo">EVENTTIME</h1>
-            <!--Icono-->
-            <a href="eventos2.html"><img src="./assets/img/svg/retroceder.svg" /></a>
+            <h1 class="Header-Logo">EVENTTIME</h1>
+            <section class="Logos">
+                <!--Icono-login-->
+                <section class="lupa">
+                    <input class="busca"><img class="Buscar"
+                    src="./assets/img/svg/lupa.svg"></img></input>
+                </section>
+                <!--Icono-despliegue-->
+                <input class="Header-despliega" type="checkbox" id="Header-boton">
+                <label for="Header-boton">
+                    <!-- icono de hamburguesa-->
+                    <img class="Header-iconoHamburguesa" src="./assets/img/svg/Menú.svg" />
+                </label>
+                <!--Desplegable-->
+                <ul class="Header-desplegable">
+                    <li><a class="liks" href="inicio.html">INICIO</a></li>
+                    <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
+                    <li><a class="liks" href="eventos2.html">EVENTOS</a></li>
+                    <li><a class="liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
+                    <li><a class="liks" href="contactanos2.html">CONTACTANOS</a></li>
+                </ul>
+            </section>
         </section>
-    </Header>
-    <!--MAIN-->
-    <main class="Main3">
-        <h3>EVENTOS PASADOS</h3>
+    </header>
+<!--MAIN-->
+<main class="Main3">
+    <h3>EVENTOS PASADOS</h3>
+    <hr class="linea1">
+    <section class="cajaGeneral1">
         <article class="Main3-imagen1"></article>
-        <h3 class="Main3-texto">LA CANTANTE CONCHA BOIKA REGRESA A MALLORCA EN UN CONCIERTO BENEFICO</h3>
-        <section class="Boton">
-            <button class="button"><a href="edicionbuika2.html">Mas informacion</a></button>
+        <section class="general1">
+            <h3 class="Main3-texto">LA CANTANTE CONCHA BOIKA REGRESA A MALLORCA EN UN CONCIERTO BENEFICO</h3>
+            <p class="textoBuika">La cantante Concha Buika, nacida en Mallorca y afincada en Miami, regresa a su
+                tierra natal para ofrecer un concierto benéfico. | Concha Buika</p>
+            <section class="Boton">
+                <button class="button"><a href="edicionbuika.html">Mas informacion</a></button>
+            </section>
         </section>
+    </section>
+    <section class="cajaGeneral2">
         <article class="Main3-imagen2"></article>
-        <h3 class="Main3-texto2">CONCIERTO DE ROMY_SO_LOVE POR PRIMERA VEZ EN PALMA DE MALLORCA</h3>
-        <section class="Boton">
-            <button  class="button"><a href="edicionromy2.html">Mas informacion</a></button>
+        <section class="general2">
+            <h3 class="Main3-texto2">CONCIERTO DE ROMY_SO_LOVE POR PRIMERA VEZ EN PALMA DE MALLORCA</h3>
+            <p class="textoBuika">Romy so love llega por primera vez en Palma de mallorca, en un concierto organizado por sus hermanos paisanos residentes en Mallorca.</p>
+            <section class="Boton">
+                <button class="button"><a href="edicionromy.html">Mas informacion</a></button>
+            </section>
         </section>
-        <h3 class="Main2-titulo">EVENTTIME</h3>
-    </main>
+    </section>
 
-    <!--FOOTER-->
-    <footer class="Footer">
-        <section class="Footer-Comentario">
-            <p class="Footer-texto">Todavía es desconcertante.
-                Puedes disfrutarlo al máximo</p>
-        </section>
-        <section class="lista">
-            <p class="list1">Acerca de.</p>
-            <p class="list2">Eventos</p>
-            <p class="list3">Otros eventos</p>
-            <p class="list4">Contactos</p>
-            <a class="list5">Politia de privacidad</a>
-            <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
-            <h4 class="list7">EVENT</h4>
-            <h4 class="list8">TIME</h4>
-        </section>
-    </footer>
+    <h3 class="Main2-titulo">EVENTTIME</h3>
+</main>
+
+<!--FOOTER-->
+<footer class="Footer">
+    <section class="Footer-Comentario">
+        <p class="Footer-texto">Todavía es desconcertante.
+            Puedes disfrutarlo al máximo</p>
+    </section>
+    <section class="lista">
+        <p class="list1">Acerca de.</p>
+        <p class="list2">Eventos</p>
+        <p class="list3">Otros eventos</p>
+        <p class="list4">Contactos</p>
+        <a class="list5">Politia de privacidad</a>
+        <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
+        <h4 class="list7">EVENT</h4>
+        <h4 class="list8">TIME</h4>
+    </section>
+</footer>
 </body>
 </html>
