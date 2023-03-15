@@ -1546,6 +1546,74 @@ Main .OtrosEventos .event {
   margin-top: 0;
   /*Edicion*/
 }
+.Main3 .cajaGeneral1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .cajaGeneral1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .cajaGeneral2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .general1 {
+    width: 634px;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .general2 {
+    width: 634px;
+    text-align: justify;
+    padding-top: 20px;
+  }
+}
+.Main3 .textoBuika {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .textoBuika {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .linea1 {
+    width: 211px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin-bottom: 50px;
+  }
+}
 .Main3 .Main3-texto {
   font-size: 14px;
 }
@@ -1568,6 +1636,16 @@ Main .OtrosEventos .event {
   width: 328px;
   height: 159px;
 }
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-imagen1 {
+    background: url("../assets/img/desktop/Buika2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    width: 247px;
+  }
+}
 .Main3 .Main3-imagen2 {
   background: url("../assets/img/smartphone/romy_so_love3.webp");
   background-repeat: no-repeat;
@@ -1576,6 +1654,16 @@ Main .OtrosEventos .event {
   margin-top: 30px;
   width: 328px;
   height: 159px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-imagen2 {
+    background: url("../assets/img/desktop/romy_so_love.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    width: 247px;
+  }
 }
 .Main3 .Main3-texto2 {
   font-size: 14px;

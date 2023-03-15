@@ -887,6 +887,58 @@ Main {
     text-align: center;
     margin-top: 0;
 
+    .cajaGeneral1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width:1200px){
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+
+    .cajaGeneral2{
+        @media only screen and (min-width:1200px){
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .general1{
+        @media only screen and (min-width:1200px){
+            width: 634px;
+            text-align: justify;
+        }
+    }
+
+    .general2{
+        @media only screen and (min-width:1200px){
+            width: 634px;
+            text-align: justify;
+            padding-top: 20px;
+            
+        }
+    }
+
+    .textoBuika{
+        display: none;
+        @media only screen and (min-width:1200px){
+            display: flex;
+        }
+    }
+
+    .linea1{
+        @media only screen and (min-width:1200px){
+            width: 211px;
+            height: map-get($medidas, heightLinea);
+            background-color: map-get($Colores, LetraNegra);
+            border: none;
+            margin-bottom: 50px;
+        }
+    }
     .Main3-texto {
         font-size: map-get($medidasMain,  letras );
 
@@ -912,6 +964,14 @@ Main {
         background-position: center;
         width: map-get($medidasMain, widthEventos-pasados);
         height: map-get($medidasMain, heightEventos-pasados);
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Buika2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 225px;
+            width: 247px;
+        }
     }
 
     .Main3-imagen2 {
@@ -922,6 +982,14 @@ Main {
         margin-top: map-get($medidasMainAcerca, margin-top-imagen3);
         width: map-get($medidasMain, widthEventos-pasados);
         height: map-get($medidasMain, heightEventos-pasados);
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/romy_so_love.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 225px;
+            width: 247px;
+        }
     }
 
     .Main3-texto2{
