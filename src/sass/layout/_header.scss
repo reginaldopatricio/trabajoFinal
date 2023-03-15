@@ -157,6 +157,18 @@ Header {
 
     }
 
+    .lupa{
+        display: none;
+        @media only screen and (min-width:1200px){
+            display: flex;
+            .busca{
+                border-radius: 10px;
+                background-color: map-get($Colores, baseEcuatoguineano);
+                height: 25px;
+            }
+        }
+    }
+
     .Header-Logo {
         color: map-get($Colores, letraLogo);
 

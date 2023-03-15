@@ -390,6 +390,21 @@ Header .Header-Navbar {
             justify-content: space-between;
   }
 }
+Header .lupa {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  Header .lupa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  Header .lupa .busca {
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 25px;
+  }
+}
 Header .Header-Logo {
   color: #A83ADE;
 }
