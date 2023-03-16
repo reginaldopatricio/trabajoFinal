@@ -730,7 +730,7 @@ Main .Main-boton {
 @media only screen and (min-width: 1200px) {
   Main .Main-boton {
     width: 200px;
-    height: 102px;
+    height: 70px;
     margin-right: 250px;
   }
 }
@@ -1736,7 +1736,7 @@ Main .boton {
   .Main3 .general1 {
     width: 634px;
     text-align: justify;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1864,6 +1864,21 @@ Main .boton {
     width: 550px;
   }
 }
+.Main3 .contenedor1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .Main3 .texto {
   text-align: justify;
   width: 314px;
@@ -1964,6 +1979,48 @@ Main .boton {
     background-position: center;
     width: 328px;
     height: 217px;
+  }
+}
+.Main3 .Main3-Vanilla {
+  background: url("../assets/img/smartphone/Vanilla-karr@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 217px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-Vanilla {
+    background: url("../assets/img/desktop/Vanilla-karr2@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 451px;
+    height: 480px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.Main3 .Main3-Mba {
+  background: url("../assets/img/smartphone/Mba@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 328px;
+  height: 217px;
+}
+@media only screen and (min-width: 1200px) {
+  .Main3 .Main3-Mba {
+    background: url("../assets/img/desktop/Mba@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 451px;
+    height: 480px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 

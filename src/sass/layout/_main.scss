@@ -159,179 +159,11 @@ Main {
         
                 @media only screen and (min-width:1200px){
                     width: 200px;
-                    height: 102px;
-                    
+                    height: 70px;
                     margin-right: 250px;
                 }
         
             }
-    // .Main-texto {
-    //     background-color: map-get($Colores, baseEcuatoguineano);
-    //     margin-top: map-get($medidas, margin-Main);
-    //     padding-top: map-get($medidas, padding-top);
-
-    //     @media only screen and (min-width:1200px) {
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         flex-direction: column;
-    //     }
-    // }
-
-    // .Main-talento {
-    //     text-align: center;
-    //     @media only screen and (min-width:1200px){
-    //         font-size: 24px;
-    //     }
-        
-        
-
-    // }
-
-    // .Main-linea {
-    //     height: map-get($medidas, heightLinea);
-    //     width: map-get($medidas, widthLinea);
-    //     background-color: map-get($Colores, LetraNegra);
-    //     border: none;
-    // }
-
-    // .Main-parrafo {
-    //     text-align: justify;
-    //     padding: map-get($medidas, paddingParafo);
-    //     font-size: map-get($medidas, letraParafo);
-    //     margin-bottom: 0;
-
-    //     @media only screen and (min-width:1200px) {
-    //         font-size: 16px;
-    //         width: 506px;
-
-    //     }
-    // }
-
-    // .Main-imagen {
-    //     background: url("/assets/img/smartphone/Cesar@2x.webp");
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     height: map-get($medidas, height-foto);
-    //     width: map-get($medidas, width-foto);
-
-    //     @media only screen and (min-width:1200px) {
-            
-    //         // background: url("/assets/img/desktop/Cesar@2x.webp");
-    //         background: url("/assets/img/smartphone/Cesar@2x.webp");
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //         background-position: center;
-    //         padding-top: 300px;
-    //         margin-top: 13px;
-    //     }
-
-
-    // }
-
-    // //ACERCA-DE
-
-    // .acerca {
-    //     background-color: map-get($Colores, AcercaDe);
-    //     padding: map-get($medidas, marginLados);
-    //     @media only screen and (min-width:1200px){
-    //         height: 134px;
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         justify-content: center;
-    //     }
-        
-
-    // }
-
-    // .acerca-de {
-    //     margin-Top: 0;
-    //     text-align: center;
-    //     @media only screen and (min-width:1200px){
-    //         font-size: 24px;
-    //     }
-    // }
-
-    // .Main-linea-acerca {
-    //     height: map-get($medidas, heightLinea);
-    //     width: map-get($medidas, widthLinea);
-    //     background-color: map-get($Colores, LetraNegra);
-    //     border: none;
-    //     margin-bottom: 0;
-    // }
-
-    // .Main-superior {
-    //     height: map-get($medidas, height-superior);
-    //     width: map-get($medidas, width-superior);
-    //     background: #A80499;
-    //     background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-
-    //     @media only screen and (min-width:1200px) {
-
-    //         height: 60px;
-
-    //     }
-    // }
-
-    // .Main-boton {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     border: solid gray;
-    //     width: 114px;
-    //     height: 44px;
-    //     border-radius: map-get($medidas, border-radius);
-    //     margin: map-get($medidas, margin-boton);
-    //     font-size: map-get($medidas, letra-boton);
-    //     background-color: map-get($Colores, BannerFlojo);
-    //     color: map-get($Colores, LetraLogFontIcono);
-
-    //     @media only screen and (min-width:1200px){
-    //         width: 317px;
-    //         height: 102px;
-    //         margin-bottom: 200px;
-    //         margin-right: 250px;
-    //     }
-
-    // }
-
-    // .Main-imagenblack {
-    //     background: url("/assets/img/smartphone/Black@2x.webp");
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     height: map-get($medidas, height-black);
-    //     width: map-get($medidas, width-foto);
-    //     display: flex;
-    //     justify-content: flex-end;
-    //     align-items: end;
-
-    //     @media only screen and (min-width:1200px) {
-    //         background: url("/assets/img/desktop/black.webp");
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //         background-position: center;
-    //         // width: 100%;
-    //         // height: 700px;
-
-    //     }
-
-    // }
-
-    // .Main-inferior {
-    //     height: map-get($medidas, height-superior);
-    //     width: map-get($medidas, width-superior);
-    //     background: #A80499;
-    //     background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-
-    //     @media only screen and (min-width:1200px) {
-
-    //         height: 60px;
-
-    //     }
-    // }
 
     //EVENTOS
     .Eventos {
@@ -1179,7 +1011,7 @@ Main {
         @media only screen and (min-width:1200px){
             width: 634px;
             text-align: justify;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
     }
 
@@ -1308,6 +1140,13 @@ Main {
         }
     }
 
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .texto{
         text-align: justify;
         width: map-get($medidasMain, widthLetra);
@@ -1404,5 +1243,41 @@ Main {
         }
     }
 
+    .Main3-Vanilla{
+        background: url("../assets/img/smartphone/Vanilla-karr@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: 217px;
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Vanilla-karr2@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 451px;
+            height: 480px;
+            order: 2;
+        }
+    }
+
+    .Main3-Mba{
+        background: url("../assets/img/smartphone/Mba@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: map-get($medidasMain, widthEventos-pasados);
+        height: 217px;
+
+        @media only screen and (min-width:1200px){
+            background: url("../assets/img/desktop/Mba@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 451px;
+            height: 480px;
+            order: 2;
+        }
+    }
 
 }
