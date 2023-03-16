@@ -533,6 +533,9 @@ Header a {
   text-decoration: none;
   color: #D9D9D9;
 }
+Header .liks {
+  color: black;
+}
 @media only screen and (min-width: 1200px) {
   Header .inicio {
     display: none;
@@ -552,45 +555,29 @@ Header .retrocede {
 /* ********* */
 /* @HMAIN */
 /* ********* */
-@media only screen and (min-width: 1200px) {
-  Main .DosCuadros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 Main .imagen-de-fondo {
   width: 100%;
 }
-Main .Main-texto {
-  background-color: #D9D9D9;
-  margin-top: 13px;
-  padding-top: 10px;
+Main .contenedorTriple {
+  text-align: center;
 }
 @media only screen and (min-width: 1200px) {
-  Main .Main-texto {
-    width: 50%;
+  Main .contenedorTriple {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 }
-Main .Main-talento {
-  text-align: center;
-}
 @media only screen and (min-width: 1200px) {
-  Main .Main-talento {
-    font-size: 24px;
+  Main .DosCuadros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 Main .Main-linea {
@@ -599,17 +586,11 @@ Main .Main-linea {
   background-color: black;
   border: none;
 }
-Main .Main-parrafo {
-  text-align: justify;
-  padding: 0 30px 20px 30px;
-  font-size: 12px;
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 1200px) {
-  Main .Main-parrafo {
-    font-size: 16px;
-    width: 506px;
-  }
+Main .Main-linea-acerca {
+  height: 3px;
+  width: 45px;
+  background-color: black;
+  border: none;
 }
 Main .Main-imagen {
   background: url("/assets/img/smartphone/Cesar@2x.webp");
@@ -621,89 +602,35 @@ Main .Main-imagen {
 }
 @media only screen and (min-width: 1200px) {
   Main .Main-imagen {
-    width: 50%;
-    background: url("/assets/img/desktop/Cesar@2x.webp");
+    background: url("/assets/img/desktop/talento@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 300px;
     margin-top: 13px;
+    height: 350px;
+    width: 100%;
   }
 }
-Main .acerca {
-  background-color: #868686;
-  padding: 20px 0 20px;
+Main .Main-texto {
+  background-color: #D9D9D9;
+  margin-top: 13px;
+  padding-top: 10px;
 }
 @media only screen and (min-width: 1200px) {
-  Main .acerca {
-    height: 134px;
+  Main .Main-texto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-Main .acerca-de {
-  margin-Top: 0;
-  text-align: center;
-}
-@media only screen and (min-width: 1200px) {
-  Main .acerca-de {
-    font-size: 24px;
-  }
-}
-Main .Main-linea-acerca {
-  height: 3px;
-  width: 45px;
-  background-color: black;
-  border: none;
-  margin-bottom: 0;
-}
-Main .Main-superior {
-  height: 25px;
-  width: 100%;
-  background: #A80499;
-  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-}
-@media only screen and (min-width: 1200px) {
-  Main .Main-superior {
-    height: 60px;
-  }
-}
-Main .Main-boton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: solid gray;
-  width: 114px;
-  height: 44px;
-  border-radius: 10px;
-  margin: 0 30px 30px 0;
-  font-size: 14px;
-  background-color: #A80499;
-  color: #C5D3E3;
-}
-@media only screen and (min-width: 1200px) {
-  Main .Main-boton {
-    width: 317px;
-    height: 102px;
-    margin-bottom: 200px;
-    margin-right: 250px;
   }
 }
 Main .Main-imagenblack {
@@ -730,8 +657,38 @@ Main .Main-imagenblack {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 700px;
+    height: 350px;
   }
+}
+Main .acerca {
+  background-color: #868686;
+  padding: 20px 0 20px;
+}
+@media only screen and (min-width: 1200px) {
+  Main .acerca {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+Main .acerca-de {
+  margin-bottom: 0;
+}
+Main .Main-superior {
+  height: 25px;
+  width: 100%;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
 }
 Main .Main-inferior {
   height: 25px;
@@ -739,9 +696,42 @@ Main .Main-inferior {
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
 }
+Main .Main-parrafo {
+  text-align: justify;
+  padding: 0 30px 20px 30px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
 @media only screen and (min-width: 1200px) {
-  Main .Main-inferior {
-    height: 60px;
+  Main .Main-parrafo {
+    font-size: 16px;
+    width: 506px;
+  }
+}
+Main .Main-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid gray;
+  width: 114px;
+  height: 44px;
+  border-radius: 10px;
+  margin: 0 30px 30px 0;
+  font-size: 14px;
+  background-color: #A80499;
+  color: #C5D3E3;
+}
+@media only screen and (min-width: 1200px) {
+  Main .Main-boton {
+    width: 200px;
+    height: 80px;
+    margin-right: 250px;
   }
 }
 Main .Eventos {
