@@ -116,6 +116,19 @@ input:checked~.Header-desplegable {
     color: map-get($Colores , LetraNegra);
 }
 
+.inicio{
+    @media only screen and (min-width:1200px) {
+        display: none;
+    }
+}
+.inicio1{
+    display: none;
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        padding-left: 148vh;
+    }
+}
+
 //INICIO DE SESION
 .retrocede {
     display: none;

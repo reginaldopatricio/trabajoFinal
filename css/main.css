@@ -494,6 +494,24 @@ input:checked ~ .Header-desplegable {
   color: black;
 }
 
+@media only screen and (min-width: 1200px) {
+  .inicio {
+    display: none;
+  }
+}
+
+.inicio1 {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .inicio1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 148vh;
+  }
+}
+
 .retrocede {
   display: none;
 }
@@ -1546,6 +1564,14 @@ Main .boton {
     padding-bottom: 30px;
   }
 }
+.Main2 .cajas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media only screen and (min-width: 1200px) {
   .Main2 .cajas {
     display: -webkit-box;
@@ -1555,19 +1581,7 @@ Main .boton {
   }
 }
 .Main2 .segundaCaja {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 @media only screen and (min-width: 1200px) {
   .Main2 .contenido {

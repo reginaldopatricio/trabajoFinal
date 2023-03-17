@@ -906,6 +906,8 @@ Main {
     }
 
     .cajas{
+        display: flex;
+        justify-content: center;
         @media only screen and (min-width:1200px){
             display: flex;
             gap: 200px;
@@ -913,10 +915,7 @@ Main {
     }
 
     .segundaCaja{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
     }
 
     .contenido{
