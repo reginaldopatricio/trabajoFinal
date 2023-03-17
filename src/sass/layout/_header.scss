@@ -139,29 +139,16 @@ input:checked~.Header-desplegable {
     }
 }
 
-.lupa {
-    display: none;
-
-    @media only screen and (min-width:1200px) {
-        display: flex;
-
-        .busca {
-            border-radius: 10px;
-            background-color: map-get($Colores, baseEcuatoguineano);
-            height: 25px;
-        }
-    }
-}
 
 .registrado{
     display: none;
     @media only screen and (min-width:1200px) {
         display: flex;
         align-items: center;
+        gap: 30px;
 
     }
-    
-    .navegador{
+        .navegador{
         background-color: #C5D3E3;
         border-radius: 50%;
 

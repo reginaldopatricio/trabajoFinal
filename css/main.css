@@ -526,22 +526,6 @@ input:checked ~ .Header-desplegable {
   }
 }
 
-.lupa {
-  display: none;
-}
-@media only screen and (min-width: 1200px) {
-  .lupa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .lupa .busca {
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    height: 25px;
-  }
-}
-
 .registrado {
   display: none;
 }
@@ -553,6 +537,7 @@ input:checked ~ .Header-desplegable {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 30px;
   }
 }
 .registrado .navegador {
