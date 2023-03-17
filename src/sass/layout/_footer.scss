@@ -125,31 +125,52 @@
 .primeraCaja{
     display: flex;
     flex-direction: column;
-    width: 75%;
-}
+    width: 80%;
+    @media only screen and (min-width:1200px){
+         font-size: 16px;
+        text-align: center;
+    }
+   
 
-.subcaja1{
-    display: flex;
-    gap: 20px;
-    margin-left: 15px;
-}
+    .subcaja1{
+        display: flex;
+        justify-content: space-around;
+        @media only screen and (min-width:1200px){
+            
+        }
+        .list1, .list2, .list3, .lista4{
+            @media only screen and (min-width:1200px){
+                padding-left: 0 ;
+            }
+        }
+    }
+    .subcaja2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 40px;
+        @media only screen and (min-width:1200px){
+            order: 3;
+        }
+    }
 
-.subcaja2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-}
-.list4{
-    margin-left: 15px;
-}
-.list6{
-    grid-column: 1/3;
-    padding-left: 15px;
-}
+    .list6{
+        text-align: center;
+        padding-right: 3px;
+    }
 
-.list5{
-    display: flex;
-    align-items: center;
+    .lista4{
+        display: none;
+        @media only screen and (min-width:1200px){
+            display: flex;
+        }
+    }
+
+    .list4{
+        @media only screen and (min-width:1200px){
+            display: none;
+        }
+    }
 }
 
 .segundaCaja{
@@ -157,7 +178,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 20%;
     font-size: 15px;
     font-family: 'America';
 }
