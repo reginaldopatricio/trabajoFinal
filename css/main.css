@@ -539,6 +539,24 @@ input:checked ~ .Header-desplegable {
   }
 }
 
+.registrado {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .registrado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.registrado .navegador {
+  background-color: #C5D3E3;
+  border-radius: 50%;
+}
+
 /* ********* */
 /* @HMAIN */
 /* ********* */

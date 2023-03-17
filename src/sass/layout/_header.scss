@@ -151,3 +151,18 @@ input:checked~.Header-desplegable {
         }
     }
 }
+
+.registrado{
+    display: none;
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+
+    }
+    
+    .navegador{
+        background-color: #C5D3E3;
+        border-radius: 50%;
+
+    }
+}
