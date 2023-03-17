@@ -390,6 +390,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -555,6 +558,21 @@ input:checked ~ .Header-desplegable {
 .registrado .navegador {
   background-color: #C5D3E3;
   border-radius: 50%;
+}
+
+.tapar {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .tapar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.tapar .miPerfil {
+  text-decoration: none;
+  color: #C5D3E3;
 }
 
 /* ********* */
