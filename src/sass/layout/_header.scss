@@ -46,11 +46,25 @@
     @media only screen and (min-width:1200px) {
         display: flex;
         gap: 20px;
+        overflow: hidden;
+        height: 100%;
+        align-items: center;
+
+        li{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
 
 
     }
 }
 
+
+
+.Header-Desktop li:hover{
+    background-color: #A80499;
+}
 .Liks {
     text-decoration: none;
     color: #C5D3E3;
@@ -115,6 +129,8 @@ input:checked~.Header-desplegable {
     padding: map-get($medidas , paddingChecked);
     background-color: map-get($Colores , baseEcuatoguineano);
     color: map-get($Colores , LetraNegra);
+    z-index: 10px;
+    
 }
 
 .inicio{
