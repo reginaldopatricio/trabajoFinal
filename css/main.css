@@ -662,6 +662,10 @@ Main .Main-imagen {
     margin-top: 13px;
     height: 350px;
     width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(0, 0, 0, 0.1)));
   }
 }
 Main .Main-texto {
