@@ -1,3 +1,18 @@
 /* ********* */
 /* @BUTTONS */
 /* ********* */
+
+
+.pulsar{
+    
+    width: map-get($medidas, width-botons);
+    height:map-get($medidas, heigth-botons);
+    border-radius: map-get($medidas, border-radius);
+    background-color: map-get($Colores, BannerFlojo);
+}
+
+.a{
+    text-decoration: none;
+    color:map-get($Colores, LetraLogFontIcono);
+
+}

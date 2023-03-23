@@ -24,26 +24,26 @@
             </section>
         </section>
     </header>
-        <!--MAIN-->
+       <!--MAIN-->
         <main class="Main">
             <section class="CajaPrincipal">
                 <section class="cajaForm">
                     <article class="icono"></article>
                     <h3 class="Iniciar-Sesion">Registrarse</h3>
-                    <form action="login.html" class="formulario2">
-                        <input type="text" id="nombre" class="nombre" placeholder="nombre">
-                        <input type="text" id="apellidos" class="apellidos" placeholder="apellidos">
-                        <input type="text" id="correo-electronico" name="correo-electronico" class="correo"
+                    <form action="comprobacion_registro.php" method="post" class="formulario2" onsubmit="return validarFormulario()">
+                        <input type="text" id="nombre" class="nombre" name="nombre" placeholder="nombre">
+                        <input type="text" id="apellidos" class="apellidos" name="apellidos" placeholder="apellidos">
+                        <input type="text" id="usuario" class="apellidos" name="usuario" placeholder="usuario">
+                        <input type="text" id="correo_electronico" name="correo_electronico" class="correo"
                             placeholder="correo electronico">
-                        <input type="password" id="password" class="contraseña" placeholder="contraseña">
-                        <input type="password" id="confirmar" class="confirmar-contraseña"
-                            placeholder="confirmar contraseña">
-                        <input type="submit" value="Entrar" class="boton2">
+                        <input type="password" id="password" class="contraseña" name="password" placeholder="contraseña">
+                        <input type="submit" value="enviar" name="Enviar" class="boton2">
                     </form>
                 </section>
             </section>
             
         </main>
+        <script src="validacion.js"></script>
  <!--FOOTER-->
  <footer class="Footer">
     <section class="Footer-Comentario">

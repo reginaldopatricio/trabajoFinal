@@ -1,6 +1,3 @@
-/* ********* */
-/* @HEADER */
-/* ********* */
 .Header-Navbar {
     display: flex;
     background: #A80499;
@@ -8,11 +5,13 @@
     width: map-get($medidas , widthgeneral);
     align-items: center;
     justify-content: space-around;
+    position: relative;
 
 }
 
 .Header-Logo {
     color: #A83ADE;
+
     @media only screen and (min-width:1200px) {
         width: 20%;
         margin-left: 50px;
@@ -23,9 +22,14 @@
 .escritorio {
     @media only screen and (min-width:1200px) {
         display: flex;
-        gap: 200px;
-        align-items: center;
+        gap: 100px;
+    }
+}
 
+.escritorio2{
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        padding-left: 80px;
     }
 }
 
@@ -35,6 +39,7 @@
 
     @media only screen and (min-width:1200px) {
         width: 80%;
+        
 
     }
 }
@@ -45,34 +50,22 @@
 
     @media only screen and (min-width:1200px) {
         display: flex;
-        gap: 20px;
-        overflow: hidden;
-        height: 100%;
         align-items: center;
-
-        li{
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-
+        justify-content: center;
+        gap: 20px;
+        padding-left: 60px;
     }
 }
 
-
-
-.Header-Desktop li:hover{
-    background-color: #A80499;
-}
 .Liks {
     text-decoration: none;
     color: #C5D3E3;
 }
 
-.link {
+.liks {
     text-decoration: none;
     color: black;
+    height: 50px;
 }
 
 .otra-lista {
@@ -81,6 +74,7 @@
 
     @media only screen and (min-width:1200px) {
         display: flex;
+        padding-left: 110px;
         gap: 30px;
 
 
@@ -97,10 +91,13 @@
     height: map-get($medidas , heightDesplegables);
     gap: map-get($medidas , HeaderGap);
     color: map-get($Colores , baseEcuatoguineano);
+    z-index: 999;
+    transition: display 0.3s ease-in-out;
 }
 
 .Header-despliega {
     display: none;
+    transform: translateY(-50%);
 }
 
 .Header-Iconologin {
@@ -129,17 +126,17 @@ input:checked~.Header-desplegable {
     padding: map-get($medidas , paddingChecked);
     background-color: map-get($Colores , baseEcuatoguineano);
     color: map-get($Colores , LetraNegra);
-    z-index: 10px;
-    
 }
 
-.inicio{
+.inicio {
     @media only screen and (min-width:1200px) {
         display: none;
     }
 }
-.inicio1{
+
+.inicio1 {
     display: none;
+
     @media only screen and (min-width:1200px) {
         display: flex;
         padding-left: 148vh;
@@ -155,31 +152,57 @@ input:checked~.Header-desplegable {
     }
 }
 
-
-.registrado{
+.lupa {
     display: none;
+
     @media only screen and (min-width:1200px) {
         display: flex;
-        align-items: center;
-        gap: 30px;
 
-    }
-        .navegador{
-        background-color: #C5D3E3;
-        border-radius: 50%;
-
+        .busca {
+            border-radius: 10px;
+            background-color: map-get($Colores, baseEcuatoguineano);
+            height: 25px;
+        }
     }
 }
 
-.tapar{
+.php{
+    color: #C5D3E3;
+    width: 150px;
+}
+
+
+.registrado {
     display: none;
-    @media only screen and (min-width:1200px){
+
+    @media only screen and (min-width:1200px) {
         display: flex;
+        align-items: center;
+
     }
 
-    .miPerfil{
+    
+
+    .navegador {
+        background-color: #C5D3E3;
+        border-radius: 50%;
+    }
+
+    .usuario{
+        color: #C5D3E3;
+        font-size: 15px;
+    }
+}
+
+.miPerfil {
+    display: none;
+
+    @media only screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: #C5D3E3;
+       padding-left: 20px;
     }
-    
+
 }

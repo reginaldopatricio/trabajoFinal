@@ -17,10 +17,10 @@
             $resultado = $consulta->fetch();
             if ($resultado) {
                 $_SESSION["nombre_usuario"] = $usuario;
-                header("Location: inicio.php");
+                header("Location: proximos_eventos.php");
                 exit();
             } else {
-                $cod_error = 10; // login incorrecto
+                $cod_error = 90; // login incorrecto
                 
                 // redirigir al usuario a la página de error con el mensaje de error correspondiente
                 header("Location: error.php?cod_error=" . $cod_error);

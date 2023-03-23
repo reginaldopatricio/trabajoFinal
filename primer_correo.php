@@ -10,41 +10,36 @@
 </head>
 
 <body class="contenedor">
-        <!--HEADER-->
+         <!--HEADER-->
     <header class="Header">
         <section class="Header-Navbar">
             <!--Logo-->
             <h1 class="Header-Logo">EVENTTIME</h1>
             <section class="Logos">
                 <!--Icono-login-->
-                <a href="login2.html"><img class="inicio1" src="./assets/img/svg/retrocede.svg" /></a>
+                <a href="index.html"><img class="inicio1" src="./assets/img/svg/retrocede.svg" /></a>
 
-                <a href="login2.html"><img class="inicio" src="./assets/img/svg/retroceder.svg" /></a>
+                <a href="index.html"><img class="inicio" src="./assets/img/svg/retroceder.svg" /></a>
                 
             </section>
         </section>
     </header>
-       <!--MAIN-->
+        <!--MAIN-->
         <main class="Main">
             <section class="CajaPrincipal">
                 <section class="cajaForm">
                     <article class="icono"></article>
-                    <h3 class="Iniciar-Sesion">Registrarse</h3>
-                    <form action="comprobacion_registro.php" method="post" class="formulario2" onsubmit="return validarFormulario()">
-                        <input type="text" id="nombre" class="nombre" name="nombre" placeholder="nombre">
-                        <input type="text" id="apellidos" class="apellidos" name="apellidos" placeholder="apellidos">
-                        <input type="text" id="usuario" class="apellidos" name="usuario" placeholder="usuario">
-                        <input type="text" id="correo_electronico" name="correo_electronico" class="correo"
-                            placeholder="correo electronico">
-                        <input type="password" id="password" class="contraseña" name="password" placeholder="contraseña">
-                        <input type="submit" value="enviar" name="Enviar" class="boton2">
+                    <h3 class="Iniciar-Sesion">introduce tu primer correo</h3>
+                    <form action="comprobacion_correo.php" method="POST" class="formulario2">
+                    <input type="text" id="correo_electronico" name="antiguo_correo" class="correo" placeholder="correo electronico">
+                        <input type="submit" value="Entrar" name="Enviar" class="boton2">
                     </form>
                 </section>
             </section>
             
         </main>
-        <script src="validacion.js"></script>
- <!--FOOTER-->
+
+     <!--FOOTER-->
  <footer class="Footer">
     <section class="Footer-Comentario">
         <p class="Footer-texto1">Todavía es desconcertante.</p>

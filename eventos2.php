@@ -1,3 +1,9 @@
+<?php
+	//Activo la sesión en PHP
+	session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +16,7 @@
 </head>
 
 <body>
-      <!--HEADER-->
+    <!--HEADER-->
     <header class="Header">
         <section class="Header-Navbar">
             <!--Logo-->
@@ -19,33 +25,41 @@
                 <!--Icono-login-->
                 <a href="index.html"><img class="inicio" src="./assets/img/svg/Inicio.svg" /></a>
                 <!--Desplegable Movil-->
+                <!--Desplegable Movil-->
                 <ul class="Header-desplegable">
-                    <li><a class="liks" href="#">INICIO</a></li>
-                    <li><a class="liks" href="acerca_de.html">ACERCA DE.</a></li>
-                    <li><a class="liks" href="eventos.html">EVENTOS</a></li>
-                    <li><a class="liks" href="otros_eventos.html">OTROS EVENTOS</a></li>
-                    <li><a class="liks" href="contactanos.html">CONTACTANOS</a></li>
+                    <li><a class="liks" href="inicio.php">INICIO</a></li>
+                    <li><a class="liks" href="acerca_de2.php">ACERCA DE.</a></li>
+                    <li><a class="liks" href="eventos2.php">EVENTOS</a></li>
+                    <li><a class="liks" href="otros_eventos2.php">OTROS EVENTOS</a></li>
+                    <li><a class="liks" href="contactanos2.php">CONTACTANOS</a></li>
                 </ul>
 
                 <!--DESKTOP-->
                 <section class="escritorio">
                     <ul class="Header-Desktop">
-                        <li><a class="Liks" href="inicio.html">INICIO</a></li>
-                        <li><a class="Liks" href="acerca_de2.html">ACERCA DE.</a></li>
-                        <li><a class="Liks" href="eventos2.html">EVENTOS</a></li>
-                        <li><a class="Liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
-                        <li><a class="Liks" href="contactanos2.html">CONTACTANOS</a></li>
+                        <li><a class="Liks" href="inicio.php">INICIO</a></li>
+                        <li><a class="Liks" href="acerca_de2.php">ACERCA DE.</a></li>
+                        <li><a class="Liks" href="eventos2.php">EVENTOS</a></li>
+                        <li><a class="Liks" href="otros_eventos2.php">OTROS EVENTOS</a></li>
+                        <li><a class="Liks" href="contactanos2.php">CONTACTANOS</a></li>
                     </ul>
 
                     <section class="registrado">
                         <img class="navegador" src="./assets/img/svg/navegador.svg" alt="">
+                        <section class="php">
+                            <?php
+
+                                                $usuario = $_SESSION["nombre_usuario"];
+                                                echo "<h3>$usuario</h3>"; ?>
+                        </section>
                     </section>
-    
+                    <a class="miPerfil" href="perfil.php"><img class="perfil" src="./assets/img/svg/Registro.svg"/>Mi perfil</a>
                 </section>
                 
             </section>
         </section>
     </header>
+    <!--MAIN-->
         <main class="Main2">
             <section class="Fondo">
                 <h3 class="Fondo-texto">EVENTOS</h3>
@@ -53,13 +67,13 @@
             <section class="Eventos">
                 <hr class="Eventos-linea">
                 <section class="Tipo-evento">
-                    <a class="Proximos" href="proximos_eventos.html">
+                    <a class="Proximos" href="proximos_eventos.php">
                         <article class="Eventos-imagen1"></article>
                         <p class="eventos">Proximos eventos</p>
                         <hr class="Eventos-linea">
                     </a>
     
-                    <a class="Pasados" href="eventos_pasados2.html">
+                    <a class="Pasados" href="eventos_pasados2.php">
                         <article class="Eventos-imagen2"></article>
                         <p class="eventos">Eventos pasados</p>
                         <hr class="Eventos-linea">

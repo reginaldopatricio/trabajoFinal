@@ -1,3 +1,9 @@
+<?php
+	//Activo la sesión en PHP
+	session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,55 +14,49 @@
     <title>Eventos Pasados</title>
 </head>
 <body>
-   <!--HEADER-->
-   <header class="Header">
-    <section class="Header-Navbar">
-        <!--Logo-->
-        <h1 class="Header-Logo">EVENTTIME</h1>
-        <section class="Logos">
-            <!--Icono-login-->
-            <!--Icono-despliegue-->
-            <input class="Header-despliega" type="checkbox" id="Header-boton">
-            <label for="Header-boton">
-                <!-- icono de hamburguesa-->
-                <img class="Header-iconoHamburguesa" src="./assets/img/svg/Menú.svg" />
-            </label>
-            <!--Desplegable Movil-->
-            <ul class="Header-desplegable">
-                <li><a class="liks" href="inicio.html">INICIO</a></li>
-                <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
-                <li><a class="liks" href="eventos2.html">EVENTOS</a></li>
-                <li><a class="liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
-                <li><a class="liks" href="contactanos2.html">CONTACTANOS</a></li>
-            </ul>
-            <!--Desplegable Movil-->
-            <ul class="Header-desplegable">
-                <li><a class="liks" href="inicio.html">INICIO</a></li>
-                <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
-                <li><a class="liks" href="eventos2.html">EVENTOS</a></li>
-                <li><a class="liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
-                <li><a class="liks" href="contactanos2.html">CONTACTANOS</a></li>
-            </ul>
-
-            <!--DESKTOP-->
-            <section class="escritorio">
-                <ul class="Header-Desktop">
-                    <li><a class="Liks" href="inicio.html">INICIO</a></li>
-                    <li><a class="Liks" href="acerca_de2.html">ACERCA DE.</a></li>
-                    <li><a class="Liks" href="eventos2.html">EVENTOS</a></li>
-                    <li><a class="Liks" href="otros_eventos2.html">OTROS EVENTOS</a></li>
-                    <li><a class="Liks" href="contactanos2.html">CONTACTANOS</a></li>
+    <!--HEADER-->
+    <header class="Header">
+        <section class="Header-Navbar">
+            <!--Logo-->
+            <h1 class="Header-Logo">EVENTTIME</h1>
+            <section class="Logos">
+                <!--Icono-login-->
+                <a href="index.html"><img class="inicio" src="./assets/img/svg/Inicio.svg" /></a>
+                <!--Desplegable Movil-->
+                <!--Desplegable Movil-->
+                <ul class="Header-desplegable">
+                    <li><a class="liks" href="inicio.php">INICIO</a></li>
+                    <li><a class="liks" href="acerca_de2.php">ACERCA DE.</a></li>
+                    <li><a class="liks" href="eventos2.php">EVENTOS</a></li>
+                    <li><a class="liks" href="otros_eventos2.php">OTROS EVENTOS</a></li>
+                    <li><a class="liks" href="contactanos2.php">CONTACTANOS</a></li>
                 </ul>
 
-                <section class="registrado">
-                    <img class="navegador" src="./assets/img/svg/navegador.svg" alt="">
-                </section>
+                <!--DESKTOP-->
+                <section class="escritorio">
+                    <ul class="Header-Desktop">
+                        <li><a class="Liks" href="inicio.php">INICIO</a></li>
+                        <li><a class="Liks" href="acerca_de2.php">ACERCA DE.</a></li>
+                        <li><a class="Liks" href="eventos2.php">EVENTOS</a></li>
+                        <li><a class="Liks" href="otros_eventos2.php">OTROS EVENTOS</a></li>
+                        <li><a class="Liks" href="contactanos2.php">CONTACTANOS</a></li>
+                    </ul>
 
+                    <section class="registrado">
+                        <img class="navegador" src="./assets/img/svg/navegador.svg" alt="">
+                        <section class="php">
+                            <?php
+
+                                                $usuario = $_SESSION["nombre_usuario"];
+                                                echo "<h3>$usuario</h3>"; ?>
+                        </section>
+                    </section>
+                    <a class="miPerfil" href="perfil.php"><img class="perfil" src="./assets/img/svg/Registro.svg"/>Mi perfil</a>
+                </section>
+                
             </section>
-            
         </section>
-    </section>
-</header>
+    </header>
 <!--MAIN-->
 <main class="Main3">
     <h3>EVENTOS PASADOS</h3>
