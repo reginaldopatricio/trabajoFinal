@@ -14,9 +14,10 @@
     <title>Proyecto</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-	</head>
-	<body>
-         <!--HEADER-->
+</head>
+
+<body>
+    <!--HEADER-->
     <header class="Header">
         <section class="Header-Navbar">
             <!--Logo-->
@@ -56,9 +57,10 @@
                                                 echo "<h3>$usuario</h3>"; ?>
                         </section>
                     </section>
-                    <a class="miPerfil" href="logout.php"><img class="perfil" src="./assets/img/svg/Registro.svg"/>Cerrar sesion</a>
+                    <a class="miPerfil" href="logout.php"><img class="perfil"
+                            src="./assets/img/svg/Registro.svg" />Cerrar sesion</a>
                 </section>
-                
+
             </section>
         </section>
     </header>
@@ -94,38 +96,40 @@
             $usuario = $_SESSION["nombre_usuario"];
             echo "<b>"  . " <p>Has iniciado sesion como</p> " ;
             echo "<p>$usuario</p>";
-            ?> 
-           
+            ?>
+
         </section>
+        <section class="botones">
             <button class="pulsa"><a class="editar_perfil" href="editar_perfil.html">Editar perfil</a></button>
             <button class="pulsa"><a class="editar_perfil" href="primer_correo.php">Cambiar_correo</a></button>
+        </section>
+        
     </main>
-      
-  <!--FOOTER-->
-  <footer class="Footer">
-    <section class="Footer-Comentario">
-        <p class="Footer-texto1">Todavía es desconcertante.</p>
-        <p class="Footer-texto2">Puedes disfrutarlo al máximo</p>
-    </section>
-    <section class="lista">
-        <section class="lista1">
-            <p class="list1">Acerca de.</p>
-            <p class="list2">Eventos</p>
-            <p class="list3">Otros eventos</p>
-            <p class="list4">Contactos</p>
-        </section>
-        <section class="lista2">
-            <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
-            <a class="list5">Politia de privacidad</a>
-        </section>
-        <section class="lista3">
-            <h4 class="list7">EVENT</h4>
-            <h4 class="list8">TIME</h4>
-        </section>
-    </section>
-</footer>
-	</body>
-    
-		
-</html>
 
+    <!--FOOTER-->
+    <footer class="Footer">
+        <section class="Footer-Comentario">
+            <p class="Footer-texto1">Todavía es desconcertante.</p>
+            <p class="Footer-texto2">Puedes disfrutarlo al máximo</p>
+        </section>
+        <section class="lista">
+            <section class="lista1">
+                <p class="list1">Acerca de.</p>
+                <p class="list2">Eventos</p>
+                <p class="list3">Otros eventos</p>
+                <p class="list4">Contactos</p>
+            </section>
+            <section class="lista2">
+                <p class="list6">Copyright © 2023 Todos los derechos reservados </p>
+                <a class="list5">Politia de privacidad</a>
+            </section>
+            <section class="lista3">
+                <h4 class="list7">EVENT</h4>
+                <h4 class="list8">TIME</h4>
+            </section>
+        </section>
+    </footer>
+</body>
+
+
+</html>

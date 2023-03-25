@@ -5,23 +5,29 @@
     width: map-get($medidas , widthgeneral);
     align-items: center;
     justify-content: space-around;
+    gap: 50px;
     position: relative;
-
+    height: 50px;
 }
+
 
 .Header-Logo {
     color: #A83ADE;
-
+    font-size: 20px;
+    
     @media only screen and (min-width:1200px) {
         width: 20%;
-        margin-left: 50px;
+        margin-left: 37px;
+        font-size: 26px;
 
     }
 }
 
 .escritorio {
+    display: flex;
+    align-items: center;
     @media only screen and (min-width:1200px) {
-        display: flex;
+        
         gap: 100px;
     }
 }
@@ -112,6 +118,8 @@
 .Header-iconoHamburguesa {
     width: map-get($medidas , widthIcono);
     height: map-get($medidas , heightIcono);
+    display: flex;
+    align-items: center;
 
     @media only screen and (min-width:1200px) {
         display: none;
@@ -196,13 +204,13 @@ input:checked~.Header-desplegable {
 
 .miPerfil {
     display: none;
-
     @media only screen and (min-width:1200px) {
         display: flex;
         align-items: center;
         text-decoration: none;
         color: #C5D3E3;
-       padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
     }
 
 }

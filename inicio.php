@@ -29,8 +29,9 @@
             </label>
             <!--Desplegable Movil-->
             <ul class="Header-desplegable">
-                <li><a class="liks" href="#">INICIO</a></li>
-                <li><a class="liks" href="acerca_de2.html">ACERCA DE.</a></li>
+                <li><a class="Liks" href="perfil.php">PERFIL</a></li>
+                <li><a class="Liks" href="inicio.php">INICIO</a></li>
+                <li><a class="liks" href="acerca_de2.php">ACERCA DE.</a></li>
                 <li><a class="liks" href="eventos2.php">EVENTOS</a></li>
                 <li><a class="liks" href="otros_eventos2.php">OTROS EVENTOS</a></li>
                 <li><a class="liks" href="contactanos2.php">CONTACTANOS</a></li>
