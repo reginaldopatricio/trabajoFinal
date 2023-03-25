@@ -64,7 +64,7 @@ Main {
     }
 
     .Main-imagen {
-        background: url('/assets/img/smartphone/talento@2x.webp');
+        background-image: url("../assets/img/smartphone/talento@2x.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -72,7 +72,7 @@ Main {
         width: map-get($medidas, width-foto);
       
         @media only screen and (min-width:1200px) {
-          background: url('/assets/img/desktop/talento@2x.webp');
+          background: url("../assets/img/desktop/talento@2x.webp");
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -109,7 +109,7 @@ Main {
     }
 
     .Main-imagenblack {
-        background: url("/assets/img/smartphone/Black@2x.webp");
+        background-image: url("../assets/img/smartphone/Black@2x.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -120,7 +120,7 @@ Main {
         align-items: end;
 
         @media only screen and (min-width:1200px) {
-            background: url("/assets/img/desktop/black.webp");
+            background-image: url("../assets/img/desktop/black.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

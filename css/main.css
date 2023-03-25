@@ -699,7 +699,7 @@ Main .Main-linea-acerca {
   border: none;
 }
 Main .Main-imagen {
-  background: url("/assets/img/smartphone/talento@2x.webp");
+  background-image: url("../assets/img/smartphone/talento@2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -708,7 +708,7 @@ Main .Main-imagen {
 }
 @media only screen and (min-width: 1200px) {
   Main .Main-imagen {
-    background: url("/assets/img/desktop/talento@2x.webp");
+    background: url("../assets/img/desktop/talento@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -751,7 +751,7 @@ Main .Main-texto {
   }
 }
 Main .Main-imagenblack {
-  background: url("/assets/img/smartphone/Black@2x.webp");
+  background-image: url("../assets/img/smartphone/Black@2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -769,7 +769,7 @@ Main .Main-imagenblack {
 }
 @media only screen and (min-width: 1200px) {
   Main .Main-imagenblack {
-    background: url("/assets/img/desktop/black.webp");
+    background-image: url("../assets/img/desktop/black.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
