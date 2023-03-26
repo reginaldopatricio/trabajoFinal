@@ -176,27 +176,6 @@ Main {
         }
     }
 
-    .Main-boton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: solid gray;
-        width: 114px;
-        height: 44px;
-        border-radius: map-get($medidas, border-radius);
-        margin: map-get($medidas, margin-boton);
-        font-size: map-get($medidas, letra-boton);
-        background-color: map-get($Colores, BannerFlojo);
-        color: map-get($Colores, LetraLogFontIcono);
-
-        @media only screen and (min-width:1200px) {
-            width: 200px;
-            height: 70px;
-            margin-right: 250px;
-        }
-
-    }
-
     //EVENTOS
     .Eventos {
         background-color: map-get($Colores, gris);
@@ -406,20 +385,6 @@ Main {
 
         }
 
-        .OtrosEventos-boton {
-            width: map-get($medidas, width-boton);
-            height: map-get($medidas, height-boton);
-            background-color: map-get($Colores, Boton);
-            border: none;
-            border-radius: map-get($medidas, border-radius);
-            color: map-get($Colores, LetraNegra);
-
-            @media only screen and (min-width:1200px) {
-                margin-top: 50px;
-                margin-bottom: 30px;
-            }
-        }
-
         a {
             text-decoration: none;
             color: map-get($Colores , LetraLogFontIcono);
@@ -449,113 +414,6 @@ Main {
             }
         }
 
-    }
-
-    //LOGIN
-    .icono {
-        background-image: url("../assets/img/smartphone/icono-perfil@2x.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 149px;
-        height: 115px;
-    }
-
-    .cajaForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15px;
-
-        @media only screen and (min-width:1200px) {
-            background-color: #D9D9D9;
-            width: 300px;
-            padding: 30px;
-            border-radius: 10px;
-        }
-    }
-
-    .CajaPrincipal {
-        @media only screen and (min-width:1200px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-        }
-    }
-
-    .formulario2 {
-        width: map-get($medidasMain, widthFormulario);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-
-        margin-bottom: 0;
-    }
-
-    .correo,
-    .contraseña,
-    .nombre,
-    .confirmar-contraseña,
-    .apellidos {
-        width: map-get($medidasMain, widthinput);
-        height: map-get($medidasMain, heightinput);
-        border: solid gray;
-        border-radius: map-get($medidasMain, borderRadius-boton);
-
-    }
-
-    //contraseña del login
-    .contraseña1 {
-        width: map-get($medidasMain, widthinput);
-        height: map-get($medidasMain, heightinput);
-        border: solid gray;
-        border-radius: map-get($medidasMain, borderRadius-boton);
-    }
-
-    .contraseña,
-    .nombre,
-    .confirmar-contraseña,
-    .apellidos {
-        margin-bottom: 30px;
-    }
-
-    //boton del registro
-    .boton2 {
-        width: map-get($medidasMain, widthenviar);
-        height: map-get($medidasMain, heightinput);
-        margin-top: map-get($medidasMain, gapinput);
-        background-color: map-get($Colores, Boton);
-        border-radius: map-get($medidasMain, borderRadius-boton);
-        color: map-get($Colores, LetraLogFontIcono);
-        margin-bottom: 30px;
-    }
-
-    .correo {
-        margin-bottom: 30px;
-    }
-
-    .text {
-        font-size: 10px;
-        text-decoration: none;
-        padding-left: 120px;
-    }
-
-    .registro {
-        text-decoration: none;
-        margin-top: 10px;
-        margin-bottom: 30px
-    }
-
-    .boton {
-        width: map-get($medidasMain, widthenviar);
-        height: map-get($medidasMain, heightinput);
-        margin-top: map-get($medidasMain, gapinput);
-        background-color: map-get($Colores, Boton);
-        border-radius: map-get($medidasMain, borderRadius-boton);
-        color: map-get($Colores, LetraLogFontIcono);
     }
 
 }
@@ -1006,72 +864,6 @@ Main {
         }
     }
 
-    .formulario {
-        width: map-get($medidasMain, widthFormulario);
-        height: map-get($medidasMain, heightFormulario);
-        background-color: map-get($Colores, baseEcuatoguineano);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 10px;
-        padding: 20px;
-
-        @media only screen and (min-width:1200px) {
-            width: 300px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .nombre-apellidos,
-        .telefono,
-        .correo {
-            width: map-get($medidasMain, widthinput);
-            height: map-get($medidasMain, heightinput);
-            border: solid gray;
-            border-radius: map-get($medidasMain, borderRadius-boton);
-
-
-            @media only screen and (min-width:1200px) {
-                width: 300px;
-                height: 50px;
-            }
-        }
-
-        .mensaje {
-            width: map-get($medidasMain, widthinput);
-            height: map-get($medidasMain, heigthmensaje);
-            border: solid gray;
-            border-radius: map-get($medidasMain, borderRadius-boton);
-
-            @media only screen and (min-width:1200px) {
-                width: 300px;
-            }
-        }
-
-        .nombre {
-            margin-top: map-get($medidasMain, margininput);
-
-        }
-
-        .tel,
-        .cor,
-        .mens {
-            margin-top: map-get($medidasMain, gapinput);
-
-
-        }
-
-        .boton {
-            width: map-get($medidasMain, widthenviar);
-            height: map-get($medidasMain, heightinput);
-            margin-top: map-get($medidasMain, gapinput);
-            background-color: map-get($Colores, Boton);
-            border-radius: map-get($medidasMain, borderRadius-boton);
-            color: map-get($Colores, LetraLogFontIcono);
-            margin-bottom: 30px;
-        }
-    }
-
 }
 
 /*Eventos pasados*/
@@ -1149,19 +941,6 @@ Main {
     .Main3-texto {
         //font-size: map-get($medidasMain,  letras );
         font-size: 14px;
-    }
-
-    .Boton {
-        padding-right: map-get($medidasMain, paddng-boton);
-    }
-
-    .button {
-        width: map-get($medidasMain, widthBoton-Otros-eventos);
-        height: map-get($medidasMain, heightBoton-Otros-eventos);
-        background-color: #43045D;
-        border: none;
-        border-radius: map-get($medidasMain, borderRadius-boton);
-        color: #D9D9D9;
     }
 
     .Main3-imagen1 {
@@ -1429,15 +1208,6 @@ Main {
        
     }
 
-}
-
-.botones{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    @media only screen and (min-width:1200px){
-        flex-direction: row;
-    }
 }
 
 .datos{

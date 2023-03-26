@@ -16,3 +16,97 @@
     color:map-get($Colores, LetraLogFontIcono);
 
 }
+
+.OtrosEventos-boton {
+    width: map-get($medidas, width-boton);
+    height: map-get($medidas, height-boton);
+    background-color: map-get($Colores, Boton);
+    border: none;
+    border-radius: map-get($medidas, border-radius);
+    color: map-get($Colores, LetraNegra);
+
+    @media only screen and (min-width:1200px) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+//contactanos
+.boton {
+    width: map-get($medidasMain, widthenviar);
+    height: map-get($medidasMain, heightinput);
+    margin-top: map-get($medidasMain, gapinput);
+    background-color: map-get($Colores, Boton);
+    border-radius: map-get($medidasMain, borderRadius-boton);
+    color: map-get($Colores, LetraLogFontIcono);
+    margin-bottom: 30px;
+}
+
+/////////////////////////
+.Boton {
+    padding-right: map-get($medidasMain, paddng-boton);
+}
+
+.button {
+    width: map-get($medidasMain, widthBoton-Otros-eventos);
+    height: map-get($medidasMain, heightBoton-Otros-eventos);
+    background-color: #43045D;
+    border: none;
+    border-radius: map-get($medidasMain, borderRadius-boton);
+    color: #D9D9D9;
+}
+
+////////////////////////////////
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media only screen and (min-width:1200px){
+        flex-direction: row;
+    }
+}
+
+///////////////////////////
+.boton {
+    width: map-get($medidasMain, widthenviar);
+    height: map-get($medidasMain, heightinput);
+    margin-top: map-get($medidasMain, gapinput);
+    background-color: map-get($Colores, Boton);
+    border-radius: map-get($medidasMain, borderRadius-boton);
+    color: map-get($Colores, LetraLogFontIcono);
+}
+
+ //boton del registro
+ .boton2 {
+    width: map-get($medidasMain, widthenviar);
+    height: map-get($medidasMain, heightinput);
+    margin-top: map-get($medidasMain, gapinput);
+    background-color: map-get($Colores, Boton);
+    border-radius: map-get($medidasMain, borderRadius-boton);
+    color: map-get($Colores, LetraLogFontIcono);
+    margin-bottom: 30px;
+}
+
+///////////////////////////////////////
+
+.Main-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid gray;
+    width: 114px;
+    height: 44px;
+    border-radius: map-get($medidas, border-radius);
+    margin: map-get($medidas, margin-boton);
+    font-size: map-get($medidas, letra-boton);
+    background-color: map-get($Colores, BannerFlojo);
+    color: map-get($Colores, LetraLogFontIcono);
+
+    @media only screen and (min-width:1200px) {
+        width: 200px;
+        height: 70px;
+        margin-right: 250px;
+    }
+
+}
