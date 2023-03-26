@@ -1,3 +1,9 @@
+# El archivo.sql 
+-En el repositorio he incluido el archivo.sql de mi base de datos
+-para el funcionamiento de mi pagina tendrá que exportar el archivo
+-el archivo se encuentra e la carpeta doc en el "asset"
+
+
 # Plantilla FrontEnd con SASS
 ##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**.
 
